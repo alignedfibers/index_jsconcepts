@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!--changed-->
+<html>
+<head>
+  <title>javascript_hoisting_example</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="codepress/codepress.js" type="text/javascript"></script>
+</head>
+<!--change-->
+<body>
+    <title>
+      Variable hoisting in JS
+    </title>
+    <textblock>
+      <subtitle>Description</subtitle>
+      <div class="col-left">
+        When javascript evaluates a function, it moves the declarations of all variables and functions to
+        the top of the function. This is called "Hoisting". When a variable is hoisted, it's assignment and
+        declaration are split in two, such that all variables within a function are initialized to undefined.
+        Variables will be assigned values in the order the assignments appear within the function as it is run.
+        This can cause some confusion because late declared vars are not captured in the TryCatch with the error
+        of Undeclared, and a presumption of block scope carried over from other languages can cause infinite loops,
+        and logic that does not evaluate as expected. It is recommended to declare variables just after the opening
+        curly brace within your function, nested functions are hoisted as well. You should define functions,
+        and assign values to variables before they are used.
+      </div>
+    </textblock>
+    <textblock>
+      <subtitle>Demo Controls</subtitle>
+      <div class="col-right">
+        <button id="hvu">Hoisted Var is Undefined</button>
+        <button id="hvc">Undeclared Var is Caught</button>
+        <button id="bsm">Block Scope Misconception</button>
+      </div>
+      <div id="codedemo">
+        <textarea id="cp1" class="codepress javascript linenumbers-off" style="width:50%;padding-bottom:25%;border:none;" wrap="off">
+
+
+
+
+/*************************************************
+ *
+ * There is nothing here quite yet. Please press a
+ * button to show example code and the results
+ *
+ *********************************************/
+        </textarea>
+        <textarea id="results">
+        </textarea>
+        <div id="demoplaceholdleft">^Demo Code Here^</div>
+        <div id="demoplaceholdright">^Results Here^</div>
+      </div>
+    </textblock>
+<textarea id="cp-hvc" class="hidden-code">
+function(){
+  var a = "var1";
+  var b = "var2";
+  displayElement1.innerHTML = ""
+  try{
+    results.innerHTML = "a = "+a+" b = "+b+"c = "+c;
+  }catch(err){
+    results.innerHTML = "Exception was thrown: "+err;
+  }
+}
+</textarea>
+<textarea id="cp-hvu" class="hidden-code">
+function(){
+  var a = "var1";
+  var b = "var2";
+  try{
+    results.innerHTML = "/n a = "+a+
+                        "/n b = "+b+
+                        "/n c = "+c;
+  }catch(err){
+    results.innerHTML = "Exception was thrown: "+err;
+  }
+  var c = "var3";
+}
+</textarea>
+<textarea id="cp-bsm" class="hidden-code">
+function () {
+  var a = "var1";
+  var b = "var2";
+  var tempvar = a + b;
+  try{
+    if (a !== b) {
+      var tempvar = b + a;
+      //Do some work with tempvar
+    }
+  }catch(err){
+    results.innerHTML = "Exception was thrown "+err;
+  }
+  results.innerHTML = "tempvar = "+tempvar;
+}
+</textarea>
+    <div id="hoisting_example"></div>
+  <script src="main.js"></script>
+</body>
+</html>
