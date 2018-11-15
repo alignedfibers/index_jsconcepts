@@ -14,27 +14,19 @@
     <textblock>
       <subtitle>Description</subtitle>
       <div class="col-left">
-        Function Scope is what allows the closure pattern and allows the use of global variables without redeclaring them
-        within a nested function. When considering how function scope works, we have to first consider the root-scope,
-        root-scope is the very top level scope where all of the global variables reside, within this scope we are able to
-        create addittional scopes that branch off, providing a tree like structure. Each time a function is called it creates
-        a new scope, this is called function scope, it's ancestor "lexical scope" refers to the parent scopes. Any variable
-        declared within a function scope is local to that function and accessable to all child functions nested to any level.
-        These variables declared within a function are not accessable to any of the parents unless explicitly exposed on an object
-        within the parent scope, or exposed on the global object "root-scope". In your browser the root-scope is most likely the
-        window object. If you are using nodejs or are using javscript within a pdf or other structure, the root-scope or great grandpa
-        of all scopes will be the object provided in that structure and when referencing it directly, you may use a different name
-        than "window". The root-scope is accessable to all children. If window is redeclared in the child function you will no longer
-        be able to access the window object available at the root-scope level - I will talk about this, execution context and "this"
-        more in a later demo about javascipt objects, which will allow us to demonstrate better. So, what is Function Scope, and how
-        does it work? The answer is: Each function execution has it's own variables and functions declared with var or the function statement,
-        if a specific function or variable you are looking for does not reside (is not declared) within the function where it was
-        called or accessed, the javascript engine then looks for the variable in each parent scope until it reaches the root-scope
-        before throwing an exception if it does not exist. Keep in mind that by keeping your variables declared locally, the
-        "lexical analyzer" or javscript engine does not have to crawl up the scope tree, and your code will have a performance
-        improvement. The two examples here will demonstrate using a variable locally defined within a function and using a variable
-        defined within a parent function. This concept should help when attempting to grasp how closure, callback, immediately-invoked
-        function expression, and anonymous function work.
+         Each time a function is called it creates a new scope, this is called function scope. A variable or other declaration,
+         is within functionscope if it is declared between the curly braces {} of the function. Each time a function is called
+         a new function scope is created. Function scope will not release the resources it uses to garbage collection until the 
+         function has returned and there are no references to children of that function. Each function execution has it's own 
+         variables and functions declared with var or the function statement, this is important when working with closures. 
+         
+         If a specific function or variable you are looking for does not reside (is not declared) within the function where it was
+         called or accessed, the js engine then looks for the variable in each parent scope until it reaches the root-scope
+         before throwing an exception if it does not exist (this is called the lexical scope). Declaring vars locally, provides a 
+         performance boost by ensuring the "lexical analyzer" or javscript engine does not have to crawl up the scope tree. The two 
+         examples here will demonstrate using a variable locally defined within a function and using a variable defined within a 
+         parent function. This concept should help when attempting to grasp how closure, callback, immediately-invoked function expression, 
+         and anonymous function work.
       </div>
     </textblock>
     <textblock>
