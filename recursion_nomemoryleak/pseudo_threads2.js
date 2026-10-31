@@ -19,11 +19,21 @@
 			lut[d3&0xff]+lut[d3>>8&0xff]+lut[d3>>16&0xff]+lut[d3>>24&0xff];
 		};
 		CLOSURE_ID = genUid();
+		var flagDormant = false;
 
 		window.addEventListener('message',function theEvent(event) {
 			var hctx,cr,currentTime;
 			if(event.data !== CLOSURE_ID || event.source !== window){return;}
 			event.stopPropagation();
+            // A final message can arrive after every context has been moved to dormant.
+            if(!contexts.length && !priority_contexts.length){return;}
+            // Divert one queued context per existing DOM event, without executing movement.
+            if(flagDormant){
+                hctx = priority_contexts.length ? priority_contexts.shift() : contexts.shift();
+                hctx.is_dormant = true;
+                __push(hctx);
+                return;
+            }
 
 			if(typeof priority_contexts === 'object' && priority_contexts.length > 0 && last_run_was_priority === false){
 			 last_run_was_priority = true;
@@ -78,6 +88,17 @@
 		__validateCallDef = function(call_defs){
 			return true;
 		};
+        // Set the flag; the already-posted event performs the queue transition.
+        __divertAllToDormant = function(){flagDormant = true;};
+        // Use the original __push -> notify startup path, restoring one context.
+        __exciteFirstDormant = function(){
+            flagDormant = false;
+            if(!dormant_contexts.length){return false;}
+            var hctx = dormant_contexts.shift();
+            hctx.is_dormant = false;
+            __push(hctx);
+            return true;
+        };
 
 		__buildContext = function(ctx,op_defs){
 				var call_controls = {
@@ -172,7 +193,9 @@
 		},
 		notify: function(){
 			notify();
-		}
+		},
+        haltfornow: function(){__divertAllToDormant();},
+        excite: function(){return __exciteFirstDormant();}
 	};
 };
 window.loopStack = RecursionStack({default_delay:30,default_min_cycle:0,default_max_cycle:0});
