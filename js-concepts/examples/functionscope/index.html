@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!--changed-->
+<html>
+<head>
+  <title>Function Scope in JS</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="codepress/codepress.js" type="text/javascript"></script>
+</head>
+<!--change-->
+<body>
+    <title>
+      Function Scope in JS
+    </title>
+    <textblock>
+      <subtitle>Description</subtitle>
+      <div class="col-left">
+         Each time a function is called it creates a new scope, this is called function scope. A variable or other declaration,
+         is within functionscope if it is declared between the curly braces {} of the function. Each time a function is called
+         a new function scope is created. Function scope will not release the resources it uses to garbage collection until the 
+         function has returned and there are no references to children of that function. Each function execution has it's own 
+         variables and functions declared with var or the function statement, this is important when working with closures. 
+         
+         If a specific function or variable you are looking for does not reside (is not declared) within the function where it was
+         called or accessed, the js engine then looks for the variable in each parent scope until it reaches the root-scope
+         before throwing an exception if it does not exist (this is called the lexical scope). Declaring vars locally, provides a 
+         performance boost by ensuring the "lexical analyzer" or javscript engine does not have to crawl up the scope tree. The two 
+         examples here will demonstrate using a variable locally defined within a function and using a variable defined within a 
+         parent function. This concept should help when attempting to grasp how closure, callback, immediately-invoked function expression, 
+         and anonymous function work.
+      </div>
+    </textblock>
+    <textblock>
+      <subtitle>Demo Controls</subtitle>
+      <div class="col-right">
+        <button id="runlocalvarexample">Show and run local var example</button>
+        <button id="runparentvarexample">Show and run parent var example</button>
+        <button id="runglobalexposeexample">Show lexical scope after function return</button>
+      </div>
+      <div id="codedemo">
+        <textarea id="cp1" class="codepress javascript linenumbers-off" style="width:50%;padding-bottom:25%;border:none;" wrap="off">
+
+
+
+
+/*************************************************
+ *
+ * There is nothing here quite yet. Please press a
+ * button to show example code and the results
+ *
+ *********************************************/
+        </textarea>
+        <textarea id="results">
+        </textarea>
+        <div id="demoplaceholdleft">^Demo Code Here^</div>
+        <div id="demoplaceholdright">^Results Here^</div>
+      </div>
+    </textblock>
+<textarea id="cp-localvar" class="hidden-code">
+function(){
+  var showLocalVar = function(){
+    var greeting = "hello";
+    var show = function(){
+      var greeting = "welcome";
+      return greeting;
+    };
+    results.innerHTML = "The greeting returned"+
+                        "from show is: \n"+show();
+  };
+  showLocalVar();
+}
+</textarea>
+<textarea id="cp-parentvar" class="hidden-code">
+function(){
+  var showParentVar = function(){
+    var greeting = "hello";
+    var show = function(){
+      return greeting;
+    };
+    results.innerHTML = "The greeting returned"+
+                        "from show is: \n"+show();
+  };
+  showParentVar();
+}
+</textarea>
+<textarea id="cp-exposedfunction" class="hidden-code">
+function(){
+  var exposeChildFunction = function(){
+    var greeting = "hello";
+    window.showLexicalAfterFunReturn = function(){
+      return greeting;
+    };
+    return;
+  };
+  exposeChildFunction();
+  results.innerHTML = "The greeting returned"+
+      " from showAfterReturn is: \n"+
+      showLexicalAfterFunReturn();
+}
+</textarea>
+  <div id="hoisting_example"></div>
+  <script src="main.js"></script>
+</body>
+</html>

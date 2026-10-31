@@ -1,0 +1,17 @@
+/* Raster renderings of the original author's three icon glyphs.
+   Original triangle stylesheet and its em/rem sizes remain unchanged. */
+#af-shell .icon-github-squared::before,
+#af-shell .icon-html5::before,
+#af-shell .icon-gnic-ico-center::before {
+  content: ""; display: inline-block; vertical-align: middle;
+  background: transparent center / contain no-repeat;
+}
+#af-shell .icon-github-squared::before {
+  background-image: url("icon-images/github-squared.png");width:1em;height:1em;
+}
+#af-shell .icon-html5::before {
+  background-image: url("icon-images/html5.png");width:1em;height:1em;
+}
+#af-shell .icon-gnic-ico-center::before {
+  background-image: url("icon-images/center.png");width:1em;height:1em;
+}

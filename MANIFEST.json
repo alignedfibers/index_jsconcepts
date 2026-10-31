@@ -1,0 +1,12 @@
+{
+  "site": "Shawn Stark · General Web",
+  "archive": "Vanilla JS - Evented nB Tail & Concepts",
+  "concepts": [
+    "Non-blocking Browser-side",
+    "Function Scope",
+    "Variable Hoisting",
+    "Object Prototype",
+    "FizzBuzz"
+  ],
+  "asset_count": 323
+}
