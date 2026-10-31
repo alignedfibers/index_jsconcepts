@@ -42,7 +42,8 @@
 			event.stopPropagation();
             // A final message can arrive after every context has been moved to dormant.
             if(!contexts.length && !priority_contexts.length){return;}
-            // Divert one queued context per existing DOM event, without executing movement.
+            // Divert all runcontexts that arrive through here to dormant until flagDormant is turned off.
+			// If all items are dormant, reprime/excite with "notify()" to start processing again.
             if(flagDormant){
                 hctx = priority_contexts.length ? priority_contexts.shift() : contexts.shift();
                 hctx.is_dormant = true;
@@ -140,6 +141,10 @@
 						call_controls.currently_running.callPackageName = cd[idx].pak_name;
 						call_controls.currently_running.callFunctionName = cd[idx].func_name;
 						call_controls.currently_running.cycleCount = 0;
+						//we were going to ignore if set, instead we move into a bench 
+						//typically straight run, or priority run, but we experement a little
+						//some benches will be more musical/resequencing/random than others.
+						//meaning I do not think these next to properties are needed.
 						call_controls.currently_running.is_dormant = false;
 						call_controls.currently_running.is_paused = false;
 						if(typeof cd[idx].delay !== 'undefined'){
