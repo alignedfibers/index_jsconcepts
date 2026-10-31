@@ -13,7 +13,7 @@
 //Need to again clarify opsdefs to have a "task-completion-dependency / ordering SCHEMA pointer"
 //Need to clarify within an opdef creates a grouping
 //Need to clarify between multiple opdef creates probable relation/correlation, do not depend. You can lockstep.
-//
+//queueMicroTask might not be the best, we will also create experiments for MessageChannel()
 
 	var RecursionStack = function(config){
 		var function_paks = [],
