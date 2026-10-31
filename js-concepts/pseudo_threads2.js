@@ -1,4 +1,19 @@
 (function(document,window,undefined){
+//Dormancy functionality partially added. 
+//Todo:
+//Need to be able to add paks independent of run contexts.
+//Need to clarify opdefs role as dependent operations config for the activity/task
+//Need to clarify opdefs role as time, slot resource dimension config.
+//Need to clarify opdefs role as giving all functions in that activity/task
+//Need to clarify opdefs role as setting ordering restrictions
+//Need to clarify opdefs role as not-resquencer or sequencer
+//Need to clarify opdefs sequencing function for the ops, and feedback.
+//Need to clarify opdefs role for setting allowed bench seats like "dormant"
+//Need to create experiment to adopt queu eMicrotask() instead of timeout.
+//Need to again clarify opsdefs to have a "task-completion-dependency / ordering SCHEMA pointer"
+//Need to clarify within an opdef creates a grouping
+//Need to clarify between multiple opdef creates probable relation/correlation, do not depend. You can lockstep.
+//
 
 	var RecursionStack = function(config){
 		var function_paks = [],

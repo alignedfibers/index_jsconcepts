@@ -188,7 +188,6 @@ function simConstantMomentum(childel,boundel,delta){
 	var initialBottomMomentum = (delta/3)*2;
 	boundel.append(childel);
 	var childHeight = parseFloat(childel.css('height').replace(/px|rem|em/gi,''));
-
 	var childWidth = parseFloat(childel.css('width').replace(/px|rem|em/gi,''));
 	var parentBottomBound = parseFloat(boundel.css('height').replace(/px|rem|em/gi,''));
 	var parentRightBound = parseFloat(boundel.css('width').replace(/px|rem|em/gi,''));
