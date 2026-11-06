@@ -1,8 +1,793 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Web Design 152-101 · Original Site</title><style>
-*{box-sizing:border-box}body{margin:0;background:#090c16;color:#9dc8ff;font:15px/1.5 Arial,sans-serif}a{color:#76caff}nav{position:sticky;top:0;background:#0b1120;border-bottom:1px solid #345478;z-index:5;padding:10px;display:flex;flex-wrap:wrap;gap:6px}nav a{text-decoration:none;border:1px solid #2f517b;border-radius:6px;padding:5px 9px;background:#152b47;color:#c2deff}nav a.current{background:#2768ac;color:white}#original{max-width:100%;overflow:auto;padding:10px 8px 20px;min-height:480px}#original table{max-width:100%;width:auto!important;min-width:0!important}#original td{max-width:100%;min-width:0!important}#original img{max-width:100%;height:auto!important}#original *{box-sizing:border-box}#original h1{font-size:21px}#original [align=center]{max-width:100%}#original a[href^="#/page/"]{color:#8ee4ff}#original font{color:inherit}#original img{object-fit:contain}#original p{margin:.6em 0}#original table{margin:auto}body .archived-note{padding:10px 14px;background:#12243d;font-size:12px;color:#b7d3f6}
-</style></head><body><nav id="nav" aria-label="Original site sections"></nav><div id="original"></div><div class="archived-note">Original 2008–2009 design and embedded graphics, with internal navigation reconnected. Old external links and contact forms are intentionally omitted.</div><script>
-const pages={"index.html": {"title": "Home", "html": "<body bgcolor=\"#000000\" onload=\"MM_preloadImages('images/proposal/navProposal.gif','images/proposal/navPageNotes.gif','images/proposal/navGeneralInfo.gif','images/proposal/navContactMe.gif','images/proposal/navMainPage.gif')\" text=\"#1e90ff\">\n<!-- -->\n<!-- -->\n<basefont size=\"2\"/>\n<div align=\"center\">\n<!--Header-->\n<h1 align=\"center\"><p>Class 152-101 Home/L3A1 Site Spec <\/p><\/h1>\n<!--EndHeader-->\n<center>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"821\">\n<tr valign=\"Middle\">\n<td><img alt=\"NavBar Proposal\" border=\"0\" height=\"46\" id=\"navbar_home\" loading=\"lazy\" name=\"navbar_proposal\" src=\"../assets/web-one/images/proposal/navProposal_nu.GIF\" width=\"113\"/><\/td>\n<td><img alt=\"NavBar Page Notes\" border=\"0\" height=\"46\" id=\"navbar_ourvision\" loading=\"lazy\" name=\"navbar_pageNotes\" src=\"../assets/web-one/images/proposal/navPageNotes_nu.GIF\" width=\"198\"/><\/td>\n<td><img alt=\"NavBar General Info\" border=\"0\" height=\"46\" id=\"navbar_aboutus\" loading=\"lazy\" name=\"navbar_generalInfo\" src=\"../assets/web-one/images/proposal/navGeneralInfo_nu.GIF\" width=\"198\"/><\/td>\n<td><img alt=\"NavBar Contact Me\" border=\"0\" height=\"46\" id=\"navbar_artworktransfer\" loading=\"lazy\" name=\"navbar_contactMe\" src=\"../assets/web-one/images/proposal/navContactMe_nu.GIF\" width=\"183\"/><\/td>\n<td><img alt=\"NavBar Main Page\" border=\"0\" height=\"46\" id=\"navbar_contactus\" loading=\"lazy\" name=\"navbar_mainPage\" src=\"../assets/web-one/images/proposal/navMainPage_nu.GIF\" width=\"146\"/><\/td>\n<\/tr><\/table>\n<table border=\"0\" cellpadding=\"2\" cellspacing=\"2\" width=\"890\">\n<tr valign=\"Top\">\n<td align=\"Left\">\n<table border=\"0\" cellpadding=\"4\" cellspacing=\"4\" width=\"50%\">\n<tr valign=\"Center\">\n<td align=\"center\"><font face=\"Arial\" size=\"4\">\n<img alt=\"\" border=\"0\" height=\"426\" loading=\"lazy\" src=\"../assets/web-one/images/sideBars/me4.bmp\" width=\"208\"/>\n<\/font><\/td>\n<\/tr>\n<\/table>\n<td align=\"Center\">\n<table border=\"0\" cellpadding=\"4\" cellspacing=\"4\" width=\"100%\">\n<tr valign=\"Center\">\n<td align=\"Left\"><font face=\"Arial\" size=\"2\">\n<center><img alt=\"\" border=\"0\" height=\"34\" loading=\"lazy\" src=\"../assets/web-one/images/mainNav/mainNavT.bmp\" width=\"650\"/><\/center><br/>\n<center>Welcome to Shawn's Web Design and Development Page.<\/center>\n<center>In the following pages I will demonstrate, navigational structure,<\/center>\n<center>design layout, consistancy between pages &amp; basic CSS + jscript.<\/center><br/>\n<center>The audience this page is designed for is a programing  instructor,<\/center>\n<center>specificaly James Kiley. This site is only a demonstration. If I want<\/center>\n<center>to know more about programing instuctors I would ask the instructors<\/center>\n<center>I communicate with frequently.<\/center><br/>\n<center>The success of this site is based on the grade I recieve,<\/center>\n<center> thus my goal is also to aquire a great grade.<\/center>\n<p>\n<center>\r\nView Flow Chart For This Site<\/center><\/p>\n<p>\n<center>\r\nView Layout For This Site<\/center><\/p>\n<p>\n<center>\r\nDynamic Navigation Idea Explained<\/center><\/p>\n<p>\n<center>\r\nLinks To Pages Used As Resources<\/center><\/p>\n<p> <center><a class=\"linkBar\" href=\"#/page/index.html\">Home   <\/a>Assignments   Labs   \r\n\t<\/center><\/p>\n<p><center><span style=\"background-color: #000000\"><img alt=\"\" border=\"0\" height=\"34\" loading=\"lazy\" src=\"../assets/web-one/images/mainNav/mainNavB.bmp\" width=\"650\"/> <\/span><\/center>\n<\/p><\/font><\/td>\n<\/tr>\n<\/table>\n<!--<TD ALIGN=\"Right\">\r\n\t<TABLE BORDER=0 CELLPADDING=4 CELLSPACING=4 WIDTH=\"50%\">\r\n   \t<TR VALIGN=\"Center\"> \r\n\t<TD ALIGN=\"center\"><FONT SIZE=\"4\" FACE=\"Arial\">\r\n\t<img src=\"images/sideBars/sideBarR.bmp\"BORDER=0 WIDTH=\"148\" HEIGHT=\"300\" ALT=\"\"><\/A>\t\t\r\n\r\n\t<\/TD>\r\n\t<\/TR>\r\n\t<\/TABLE>-->\n<\/td>\n<\/td><\/tr>\n<\/table>\n<\/center><\/div><\/body>"}, "Assignments/proposal.html": {"title": "Proposal", "html": "<body bgcolor=\"#000000\" onload=\"MM_preloadImages('../images/proposal/navProposal.gif','../images/proposal/navPageNotes.gif','../images/proposal/navGeneralInfo.gif','../images/proposal/navContactMe.gif','../images/proposal/navMainPage.gif')\" text=\"#1e90ff\">\n<!-- -->\n<!-- -->\n<basefont size=\"2\"/>\n<div align=\"center\">\n<!--Header-->\n<h1 align=\"center\"><p>Children &amp; The Internet Proposal <\/p><\/h1>\n<!--EndHeader-->\n<center>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"821\">\n<tr valign=\"Middle\">\n<td><a href=\"#/page/Assignments/proposal.html\"><img alt=\"NavBar Proposal\" border=\"0\" height=\"46\" id=\"navbar_home\" loading=\"lazy\" name=\"navbar_proposal\" src=\"../assets/web-one/images/proposal/navProposal_nu.GIF\" width=\"113\"/><\/a><\/td>\n<td><a href=\"#/page/Assignments/pageNotes.html\"><img alt=\"NavBar Page Notes\" border=\"0\" height=\"46\" id=\"navbar_ourvision\" loading=\"lazy\" name=\"navbar_pageNotes\" src=\"../assets/web-one/images/proposal/navPageNotes_nu.GIF\" width=\"198\"/><\/a><\/td>\n<td><img alt=\"NavBar General Info\" border=\"0\" height=\"46\" id=\"navbar_aboutus\" loading=\"lazy\" name=\"navbar_generalInfo\" src=\"../assets/web-one/images/proposal/navGeneralInfo_nu.GIF\" width=\"198\"/><\/td>\n<td><img alt=\"NavBar Contact Me\" border=\"0\" height=\"46\" id=\"navbar_artworktransfer\" loading=\"lazy\" name=\"navbar_contactMe\" src=\"../assets/web-one/images/proposal/navContactMe_nu.GIF\" width=\"183\"/><\/td>\n<td><img alt=\"NavBar Main Page\" border=\"0\" height=\"46\" id=\"navbar_contactus\" loading=\"lazy\" name=\"navbar_mainPage\" src=\"../assets/web-one/images/proposal/navMainPage_nu.GIF\" width=\"146\"/><\/td>\n<\/tr><\/table>\n<table border=\"0\" cellpadding=\"2\" cellspacing=\"2\" width=\"890\">\n<tr valign=\"Top\">\n<td align=\"Left\">\n<table border=\"0\" cellpadding=\"4\" cellspacing=\"4\" width=\"50%\">\n<tr valign=\"Center\">\n<td align=\"center\"><font face=\"Arial\" size=\"2\"><br/>\r\n\t\tThis proposal is for a site other than<br/>\r\n\t\tthis one. That I might like to create<br/>\n<img alt=\"\" border=\"0\" height=\"426\" loading=\"lazy\" src=\"../assets/web-one/images/sideBars/me4.bmp\" width=\"208\"/>\n<\/font><\/td>\n<\/tr>\n<\/table>\n<td align=\"Center\">\n<table border=\"0\" cellpadding=\"4\" cellspacing=\"4\" width=\"100%\">\n<tr valign=\"Center\">\n<td align=\"Left\"><font face=\"Arial\" size=\"2\">\n<center><img alt=\"\" border=\"0\" height=\"34\" loading=\"lazy\" src=\"../assets/web-one/images/mainNav/mainNavT.bmp\" width=\"650\"/><\/center><br/>\r\nTarget Audience: <br/>\r\n           &amp;nbspAny one with children or in direct relation with the learning and growth prowess of a child.<br/>\r\n           &amp;nbspThe site may be of use to schools, churches, children's summer camps, libraries or parents<br/>\n<p>Main Objective:<br/>\r\n\r\n           &amp;nbspInform and keep informed of barriers faced limitting what children view on line.<br/>\n<p>\r\n\r\n\r\nUser Assessment:<br/>\r\n           &amp;nbspI would track site hits with a view counter. I would also create an area for user feedback<br/>\r\n           &amp;nbspsubmissions<br/>\n<p>Ideas:<br/>\r\n\r\n           &amp;nbspProgram review \"page\".  Reviews of filtering programs.<br/>\r\n\r\n           &amp;nbspOverview \"page\" of the laws protecting minors on the internet.<br/>\r\n\r\n           &amp;nbspDevelopers help \"page\" on how not to be rejected by filters<br/>\r\n\r\n           &amp;nbspData on monkies digesting bad internet media may prove benificial. / NBC news clips<br/>\n<p>Limiting Factors:<br/>\r\n\r\n           &amp;nbspTesting of vast amounts of filtering programs may be overwhelming. <br/>\r\n           &amp;nbspEffort put forth may be better suited to two or more  individuals<br/>\r\n            \"Keep viewers informed\" meens staying up to date as the media changes.<br/> \r\n           &amp;nbspMust have a dedicated individual to do that. \r\n<p> <center><a class=\"linkBar\" href=\"#/page/index.html\">Home   <\/a>Assignments   Labs   \r\n\t<\/center><\/p>\n<p><center><span style=\"background-color: #000000\"><img alt=\"\" border=\"0\" height=\"34\" loading=\"lazy\" src=\"../assets/web-one/images/mainNav/mainNavB.bmp\" width=\"650\"/> <\/span><\/center>\n<\/p><\/p><\/p><\/p><\/p><\/font><\/td>\n<\/tr>\n<\/table>\n<!--<TD ALIGN=\"Right\">\r\n\t<TABLE BORDER=0 CELLPADDING=4 CELLSPACING=4 WIDTH=\"50%\">\r\n   \t<TR VALIGN=\"Center\"> \r\n\t<TD ALIGN=\"center\"><FONT SIZE=\"4\" FACE=\"Arial\">\r\n\t<img src=\"../images/sideBars/sideBarR.bmp\"BORDER=0 WIDTH=\"148\" HEIGHT=\"300\" ALT=\"\"><\/A>\t\t\r\n\r\n\t<\/TD>\r\n\t<\/TR>\r\n\t<\/TABLE>-->\n<\/td>\n<\/td><\/tr>\n<\/table>\n<\/center><\/div><\/body>"}, "Assignments/pageNotes.html": {"title": "Design notes", "html": "<body bgcolor=\"#000000\" onload=\"MM_preloadImages('../images/proposal/navProposal.gif','../images/proposal/navPageNotes.gif','../images/proposal/navGeneralInfo.gif','../images/proposal/navContactMe.gif','../images/proposal/navMainPage.gif')\" text=\"#1e90ff\">\n<!-- -->\n<!-- -->\n<basefont size=\"2\"/>\n<div align=\"center\">\n<!--Header-->\n<h1 align=\"center\"><p>Class 152-101 Home/L3A1 Site Spec <\/p><\/h1>\n<!--EndHeader-->\n<center>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"821\">\n<tr valign=\"Middle\">\n<td><img alt=\"NavBar Proposal\" border=\"0\" height=\"46\" id=\"navbar_home\" loading=\"lazy\" name=\"navbar_proposal\" src=\"../assets/web-one/images/proposal/navProposal_nu.GIF\" width=\"113\"/><\/td>\n<td><img alt=\"NavBar Page Notes\" border=\"0\" height=\"46\" id=\"navbar_ourvision\" loading=\"lazy\" name=\"navbar_pageNotes\" src=\"../assets/web-one/images/proposal/navPageNotes_nu.GIF\" width=\"198\"/><\/td>\n<td><img alt=\"NavBar General Info\" border=\"0\" height=\"46\" id=\"navbar_aboutus\" loading=\"lazy\" name=\"navbar_generalInfo\" src=\"../assets/web-one/images/proposal/navGeneralInfo_nu.GIF\" width=\"198\"/><\/td>\n<td><img alt=\"NavBar Contact Me\" border=\"0\" height=\"46\" id=\"navbar_artworktransfer\" loading=\"lazy\" name=\"navbar_contactMe\" src=\"../assets/web-one/images/proposal/navContactMe_nu.GIF\" width=\"183\"/><\/td>\n<td><img alt=\"NavBar Main Page\" border=\"0\" height=\"46\" id=\"navbar_contactus\" loading=\"lazy\" name=\"navbar_mainPage\" src=\"../assets/web-one/images/proposal/navMainPage_nu.GIF\" width=\"146\"/><\/td>\n<\/tr><\/table>\n<table border=\"0\" cellpadding=\"2\" cellspacing=\"2\" width=\"890\">\n<tr valign=\"Top\">\n<td align=\"Left\">\n<table border=\"0\" cellpadding=\"4\" cellspacing=\"4\" width=\"50%\">\n<tr valign=\"Center\">\n<td align=\"center\"><font face=\"Arial\" size=\"4\">\n<img alt=\"\" border=\"0\" height=\"426\" loading=\"lazy\" src=\"../assets/web-one/images/sideBars/me4.bmp\" width=\"208\"/>\n<\/font><\/td>\n<\/tr>\n<\/table>\n<td align=\"Center\">\n<table border=\"0\" cellpadding=\"4\" cellspacing=\"4\" width=\"100%\">\n<tr valign=\"Center\">\n<td align=\"Left\"><font face=\"Arial\" size=\"2\">\n<center><img alt=\"\" border=\"0\" height=\"34\" loading=\"lazy\" src=\"../assets/web-one/images/mainNav/mainNavT.bmp\" width=\"650\"/><\/center><br/>\r\nThis page started out as three nested tables with a little picture in the middle at the beginning of fall semester 2007 at WITC New Richmond.\r\nI have throughout the semester tryed jscrip scroll boxes as part of this page design, though it didn't work out I  aquired a little practice in jscript.<br/><br/>\r\nI have also during this semester used CSS to change the color of my scroll bars, links and intend to futher my knowledge in CSS.<br/><br/>\r\n\r\nI went on a venture with xml files and active controls for about two days strait trying to figure out how I can load data into a table from an xml file.\r\nOne of the recources I found in this venture that helped a lot, ImportXml<br/><br/>\r\n\r\nThe picture I used for my LOGO was taken fall of 2007. I was dressed up in an attempt of self reflection to see how those around me acted differently.<br/>\n<p> <center><a class=\"linkBar\" href=\"#/page/index.html\">Home   <\/a>Assignments   Labs   \r\n\t<\/center><\/p>\n<p><center><span style=\"background-color: #000000\"><img alt=\"\" border=\"0\" height=\"34\" loading=\"lazy\" src=\"../assets/web-one/images/mainNav/mainNavB.bmp\" width=\"650\"/> <\/span><\/center>\n<\/p><\/font><\/td>\n<\/tr>\n<\/table>\n<!--<TD ALIGN=\"Right\">\r\n\t<TABLE BORDER=0 CELLPADDING=4 CELLSPACING=4 WIDTH=\"50%\">\r\n   \t<TR VALIGN=\"Center\"> \r\n\t<TD ALIGN=\"center\"><FONT SIZE=\"4\" FACE=\"Arial\">\r\n\t<img src=\"../images/sideBars/sideBarR.bmp\"BORDER=0 WIDTH=\"148\" HEIGHT=\"300\" ALT=\"\"><\/A>\t\t\r\n\r\n\t<\/TD>\r\n\t<\/TR>\r\n\t<\/TABLE>-->\n<\/td>\n<\/td><\/tr>\n<\/table>\n<\/center><\/div><\/body>"}, "Assignments/outline.html": {"title": "Site map", "html": "<body bgcolor=\"#000000\" onload=\"MM_preloadImages('../images/proposal/navProposal.gif','../images/proposal/navPageNotes.gif','../images/proposal/navGeneralInfo.gif','../images/proposal/navContactMe.gif','../images/proposal/navMainPage.gif')\" text=\"#1e90ff\">\n<!-- -->\n<!-- -->\n<basefont size=\"2\"/>\n<div align=\"center\">\n<!--Header-->\n<h1 align=\"center\"><p>L3A2 Flow Chart for This Site <\/p><\/h1>\n<!--EndHeader-->\n<center>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"821\">\n<tr valign=\"Middle\">\n<td><a href=\"#/page/Assignments/proposal.html\"><img alt=\"NavBar Proposal\" border=\"0\" height=\"46\" id=\"navbar_home\" loading=\"lazy\" name=\"navbar_proposal\" src=\"../assets/web-one/images/proposal/navProposal_nu.GIF\" width=\"113\"/><\/a><\/td>\n<td><a href=\"#/page/Assignments/pageNotes.html\"><img alt=\"NavBar Page Notes\" border=\"0\" height=\"46\" id=\"navbar_ourvision\" loading=\"lazy\" name=\"navbar_pageNotes\" src=\"../assets/web-one/images/proposal/navPageNotes_nu.GIF\" width=\"198\"/><\/a><\/td>\n<td><img alt=\"NavBar General Info\" border=\"0\" height=\"46\" id=\"navbar_aboutus\" loading=\"lazy\" name=\"navbar_generalInfo\" src=\"../assets/web-one/images/proposal/navGeneralInfo_nu.GIF\" width=\"198\"/><\/td>\n<td><img alt=\"NavBar Contact Me\" border=\"0\" height=\"46\" id=\"navbar_artworktransfer\" loading=\"lazy\" name=\"navbar_contactMe\" src=\"../assets/web-one/images/proposal/navContactMe_nu.GIF\" width=\"183\"/><\/td>\n<td><img alt=\"NavBar Main Page\" border=\"0\" height=\"46\" id=\"navbar_contactus\" loading=\"lazy\" name=\"navbar_mainPage\" src=\"../assets/web-one/images/proposal/navMainPage_nu.GIF\" width=\"146\"/><\/td>\n<\/tr><\/table>\n<table border=\"0\" cellpadding=\"2\" cellspacing=\"2\" width=\"890\">\n<tr valign=\"Top\">\n<td align=\"Left\">\n<table border=\"0\" cellpadding=\"4\" cellspacing=\"4\" width=\"230\">\n<tr valign=\"TOP\">\n<td align=\"left\"><font face=\"Arial\" size=\"2\"><br/><br/>\r\n\t\tI Chose This Structure Because:<br/><br/>\r\n\t\tIt allows me fairly seemless <br/>\r\n\t\tnavigation between my pages.<br/><br/>\r\n\t\tIt is simple to understand<br/>\r\n\t\tand easy to portray for me.<br/><br/>\r\n\t\tThis flow chart should show<br/>\r\n\t\tthat you can access all the main<br/>\r\n\t\tcontents, home or contact from <br/>\r\n\t\tany where. Also shows you can't<br/>\r\n\t\taccess a lab from an assignment.<br/>\r\n\t\tOr Vice Versa<br/><br/>\r\n\t\tThis site meets all requirments of <br/>\r\n\t\tL3A2. This page is extra.<br/>\n<!--<img src=\"../images/sideBars/me4.bmp\"BORDER=0 WIDTH=\"208\" HEIGHT=\"426\" ALT=\"\"><\/A>-->\n<\/font><\/td>\n<\/tr>\n<\/table>\n<td align=\"Center\">\n<table border=\"0\" cellpadding=\"4\" cellspacing=\"4\" width=\"100%\">\n<tr valign=\"Center\">\n<td align=\"Left\"><font face=\"Arial\" size=\"2\">\n<center><img alt=\"\" border=\"0\" height=\"34\" loading=\"lazy\" src=\"../assets/web-one/images/mainNav/mainNavT.bmp\" width=\"650\"/><\/center><br/>\n<center><img alt=\"\" bight=\"357\" border=\"0\" loading=\"lazy\" src=\"../assets/web-one/images/misc/outline.bmp\" width\"442\"=\"\"/><\/center>\n<p> <center><a class=\"linkBar\" href=\"#/page/index.html\">Home   <\/a>Assignments   Labs   \r\n\t<\/center><\/p>\n<p><center><span style=\"background-color: #000000\"><img alt=\"\" border=\"0\" height=\"34\" loading=\"lazy\" src=\"../assets/web-one/images/mainNav/mainNavB.bmp\" width=\"650\"/> <\/span><\/center>\n<\/p><\/font><\/td>\n<\/tr>\n<\/table>\n<!--<TD ALIGN=\"Right\">\r\n\t<TABLE BORDER=0 CELLPADDING=4 CELLSPACING=4 WIDTH=\"50%\">\r\n   \t<TR VALIGN=\"Center\"> \r\n\t<TD ALIGN=\"center\"><FONT SIZE=\"4\" FACE=\"Arial\">\r\n\t<img src=\"../images/sideBars/sideBarR.bmp\"BORDER=0 WIDTH=\"148\" HEIGHT=\"300\" ALT=\"\"><\/A>\t\t\r\n\r\n\t<\/TD>\r\n\t<\/TR>\r\n\t<\/TABLE>-->\n<\/td>\n<\/td><\/tr>\n<\/table>\n<\/center><\/div><\/body>"}, "Labs/l3l1.html": {"title": "Page goals", "html": "<body bgcolor=\"#000000\" onload=\"MM_preloadImages('../images/proposal/navProposal.gif','../images/proposal/navPageNotes.gif','../images/proposal/navGeneralInfo.gif','../images/proposal/navContactMe.gif','../images/proposal/navMainPage.gif')\" text=\"#1e90ff\">\n<!-- -->\n<!-- -->\n<basefont size=\"2\"/>\n<div align=\"center\">\n<!--Header-->\n<h1 align=\"center\"><p>L3L1 / <font color=\"green\">PART 1<\/font><\/p><\/h1>\n<center><font color=\"#BBDDB88\" face=\"Arial\" size=\"2\">Goals of a page I like<\/font><\/center>\n<!--EndHeader-->\n<center>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"821\">\n<tr valign=\"Middle\">\n<td><img alt=\"NavBar Proposal\" border=\"0\" height=\"46\" id=\"navbar_home\" loading=\"lazy\" name=\"navbar_proposal\" src=\"../assets/web-one/images/proposal/navProposal_nu.GIF\" width=\"113\"/><\/td>\n<td><img alt=\"NavBar Page Notes\" border=\"0\" height=\"46\" id=\"navbar_ourvision\" loading=\"lazy\" name=\"navbar_pageNotes\" src=\"../assets/web-one/images/proposal/navPageNotes_nu.GIF\" width=\"198\"/><\/td>\n<td><img alt=\"NavBar General Info\" border=\"0\" height=\"46\" id=\"navbar_aboutus\" loading=\"lazy\" name=\"navbar_generalInfo\" src=\"../assets/web-one/images/proposal/navGeneralInfo_nu.GIF\" width=\"198\"/><\/td>\n<td><img alt=\"NavBar Contact Me\" border=\"0\" height=\"46\" id=\"navbar_artworktransfer\" loading=\"lazy\" name=\"navbar_contactMe\" src=\"../assets/web-one/images/proposal/navContactMe_nu.GIF\" width=\"183\"/><\/td>\n<td><img alt=\"NavBar Main Page\" border=\"0\" height=\"46\" id=\"navbar_contactus\" loading=\"lazy\" name=\"navbar_mainPage\" src=\"../assets/web-one/images/proposal/navMainPage_nu.GIF\" width=\"146\"/><\/td>\n<\/tr><\/table>\n<table border=\"0\" cellpadding=\"2\" cellspacing=\"2\" width=\"890\">\n<tr valign=\"Top\">\n<td align=\"Left\">\n<table border=\"0\" cellpadding=\"4\" cellspacing=\"4\" width=\"100%\">\n<tr valign=\"Center\">\n<td align=\"left\"><font color=\"#BBDDB88\" face=\"Arial\" size=\"2\">\n<a href=\"#/page/Labs/l3l1p2.html\">View Part 2<\/a><br/><br/>\r\n\t\tA quote from Nakamura <br/>\r\n\t\tabout his research<br/>\r\n\t\t\"Shows that anybody with<br/> relatively \r\n\t\tlittle special<br/> experience in the field, \r\n\t\tno big<br/> money, and no collaborations<br/> \r\n\t\twith universities or other<br/> companies,\r\n\t\tcan achieve<br/> considerable success alone<br/>\r\n\t\twhen he tries a new research<br/> area without\r\n\t\tbeing<br/> obsessed with conventional<br/> ideas\r\n\t\tand knowledge.\"\r\n\t\t\r\n\t\t  \t\t\r\n\r\n\t\t\r\n\t<\/font><\/td>\n<\/tr>\n<\/table>\n<td>\n<table border=\"0\" cellpadding=\"4\" cellspacing=\"4\" width=\"100%\">\n<tr valign=\"Center\">\n<td align=\"Left\"><font face=\"Arial\" size=\"2\">\n<center><img alt=\"\" border=\"0\" height=\"34\" loading=\"lazy\" src=\"../assets/web-one/images/mainNav/mainNavT.bmp\" width=\"650\"/><\/center><\/font><\/td><\/tr>\n<tr><table border=\"0\" cellpadding=\"4\" cellspacing=\"4\" width=\"80%\">\n<tr valign=\"Center\">\n<td align=\"Left\"><font face=\"Arial\" size=\"2\">\r\n\t\t               <\/font><\/td>\n<td align=\"Left\"><font face=\"Arial\" size=\"2\">\nhttp://www.sciencewatch.com/jan-feb2000/sw_jan-feb2000_page3.htm<br/>\n<br/>\r\n\t\tI chose this page specifically because\r\n\t\tit is an old article \r\n\t\t<br/>\r\n\t\ton Blue Ray development. As the older\r\n\t\tdocuments say\r\n\t\t<br/>\r\n\t\tBlue Ray technology will be in large\r\n\t\tdemand as soon as \r\n\t\t<br/>\t\r\n\t\tthey become available and meet\r\n\t\tstandards.\r\n\t\t<br/><br/>\r\n\t\tBlue Ray technology is now highly\r\n\t\tadvertised and pushed \r\n\t\t<br/>\t\r\n\t\ton the market. Which is why I found it\r\n\t\tmuch easier in 2003\r\n\t\t<br/>\t\r\n\t\tto find information pertaining to the\r\n\t\tdevelopment and \r\n\t\t<br/>\r\n\t\tvulnerabilities of blue laser\r\n\t\ttechnologies without skimming \r\n\t\t<br/>\r\n\t\tthrough all of the advertisements and\r\n\t\tsales pitches. \r\n\t\t<br/><br/>\r\n\t\tGOALS OF PAGE:\r\n\t\t<br/>\r\n\t        \tThe goal of this page is to\r\n\t\tinform and entertain\r\n\t\t<br/>\r\n\t\tthe reader as a summarized biography\r\n\t\tof one mans trials\r\n\t\t<br/>\r\n\t\tin the development of LED and LASER\r\n\t\ttechnologies.\r\n\t\t<br/>\r\n\t\tThis page is more specific to\r\n\t\tinforming reader of \r\n\t\t<br/>\n<font face=\"Times New Roman\"><font size=\"3\"><i><span style=\"font-weight: medium\">Nichia\r\n\t\t's Shuji Nakamura's <\/span><\/i><\/font><\/font><font face=\"Times New Roman\"><font size=\"3\"><span style=\"font-style: normal\"><span style=\"font-weight: medium\">success\r\n\t\tin the creation of a <\/span><\/span><\/font><\/font>\n<br/>\n<font face=\"Times New Roman\"><font size=\"3\"><span style=\"font-style: normal\"><span style=\"font-weight: medium\">\tblue\r\n\t\tlaser diode.<\/span><\/span><\/font><\/font>\n<\/font><\/td>\n<\/tr>\n<\/table>\n<p>\n<center><a class=\"linkBar\" href=\"#/page/index.html\">Home   <\/a>Assignments   Labs   \r\n\t\t<\/center><\/p>\n<p><center><span style=\"background-color: #000000\"><img alt=\"\" border=\"0\" height=\"34\" loading=\"lazy\" src=\"../assets/web-one/images/mainNav/mainNavB.bmp\" width=\"650\"/> <\/span><\/center>\n<\/p><\/tr><\/table><\/td>\n<\/td><\/tr>\n<\/table>\n<!--<TD ALIGN=\"Right\">\r\n\t<TABLE BORDER=0 CELLPADDING=4 CELLSPACING=4 WIDTH=\"50%\">\r\n   \t<TR VALIGN=\"Center\"> \r\n\t<TD ALIGN=\"center\"><FONT SIZE=\"4\" FACE=\"Arial\">\r\n\t<img src=\"../images/sideBars/sideBarR.bmp\"BORDER=0 WIDTH=\"148\" HEIGHT=\"300\" ALT=\"\"><\/A>\t\t\r\n\r\n\t<\/TD>\r\n\t<\/TR>\r\n\t<\/TABLE>-->\n\n\n\n<\/center><\/div><\/body>"}, "Labs/l3l1p2.html": {"title": "Content types", "html": "<body bgcolor=\"#000000\" onload=\"MM_preloadImages('../images/proposal/navProposal.gif','../images/proposal/navPageNotes.gif','../images/proposal/navGeneralInfo.gif','../images/proposal/navContactMe.gif','../images/proposal/navMainPage.gif')\" text=\"#1e90ff\">\n<!-- -->\n<!-- -->\n<basefont size=\"2\"/>\n<div align=\"center\">\n<!--Header-->\n<h1 align=\"center\"><p>L3L1 / <font color=\"green\">PART 2<\/font><\/p><\/h1>\n<center><font color=\"#BBDDB88\" face=\"Arial\" size=\"2\">Content Types Of Random Pages<\/font><\/center>\n<!--EndHeader-->\n<center>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"821\">\n<tr valign=\"Middle\">\n<td><img alt=\"NavBar Proposal\" border=\"0\" height=\"46\" id=\"navbar_home\" loading=\"lazy\" name=\"navbar_proposal\" src=\"../assets/web-one/images/proposal/navProposal_nu.GIF\" width=\"113\"/><\/td>\n<td><img alt=\"NavBar Page Notes\" border=\"0\" height=\"46\" id=\"navbar_ourvision\" loading=\"lazy\" name=\"navbar_pageNotes\" src=\"../assets/web-one/images/proposal/navPageNotes_nu.GIF\" width=\"198\"/><\/td>\n<td><img alt=\"NavBar General Info\" border=\"0\" height=\"46\" id=\"navbar_aboutus\" loading=\"lazy\" name=\"navbar_generalInfo\" src=\"../assets/web-one/images/proposal/navGeneralInfo_nu.GIF\" width=\"198\"/><\/td>\n<td><img alt=\"NavBar Contact Me\" border=\"0\" height=\"46\" id=\"navbar_artworktransfer\" loading=\"lazy\" name=\"navbar_contactMe\" src=\"../assets/web-one/images/proposal/navContactMe_nu.GIF\" width=\"183\"/><\/td>\n<td><img alt=\"NavBar Main Page\" border=\"0\" height=\"46\" id=\"navbar_contactus\" loading=\"lazy\" name=\"navbar_mainPage\" src=\"../assets/web-one/images/proposal/navMainPage_nu.GIF\" width=\"146\"/><\/td>\n<\/tr><\/table>\n<table border=\"0\" cellpadding=\"2\" cellspacing=\"2\" width=\"890\">\n<tr valign=\"Top\">\n<td align=\"Left\">\n<table border=\"0\" cellpadding=\"4\" cellspacing=\"4\" width=\"100%\">\n<tr valign=\"Center\">\n<td align=\"left\"><font color=\"#BBDDB88\" face=\"Arial\" size=\"2\">\n<a href=\"#/page/Labs/l3l1.html\">View Part 1<\/a><br/><br/>\n<br/>\n<br/>\n<br/>\n<br/>\n<br/>\n<br/>\n<br/>\n<br/>\n<br/>\n<br/>\n<br/>\n<br/>\n<\/font><\/td>\n<\/tr>\n<\/table>\n<td>\n<table border=\"0\" cellpadding=\"4\" cellspacing=\"4\" width=\"100%\">\n<tr valign=\"Center\">\n<td align=\"Left\"><font face=\"Arial\" size=\"2\">\n<center><img alt=\"\" border=\"0\" height=\"34\" loading=\"lazy\" src=\"../assets/web-one/images/mainNav/mainNavT.bmp\" width=\"650\"/><\/center><\/font><\/td><\/tr>\n<tr><table border=\"0\" cellpadding=\"4\" cellspacing=\"4\" width=\"80%\">\n<tr valign=\"Center\">\n<td align=\"Left\"><font face=\"Arial\" size=\"2\">\r\n\t\t               <\/font><\/td>\n<td align=\"Left\"><font face=\"Arial\" size=\"2\">\n\n<\/font><\/td>\n<\/tr>\n<\/table>\n<p>\n<center><a class=\"linkBar\" href=\"#/page/index.html\">Home   <\/a>Assignments   Labs   \r\n\t\t<\/center><\/p>\n<p><center><span style=\"background-color: #000000\"><img alt=\"\" border=\"0\" height=\"34\" loading=\"lazy\" src=\"../assets/web-one/images/mainNav/mainNavB.bmp\" width=\"650\"/> <\/span><\/center>\n<\/p><\/tr><\/table><\/td>\n<\/td><\/tr>\n<\/table>\n<!--<TD ALIGN=\"Right\">\r\n\t<TABLE BORDER=0 CELLPADDING=4 CELLSPACING=4 WIDTH=\"50%\">\r\n   \t<TR VALIGN=\"Center\"> \r\n\t<TD ALIGN=\"center\"><FONT SIZE=\"4\" FACE=\"Arial\">\r\n\t<img src=\"../images/sideBars/sideBarR.bmp\"BORDER=0 WIDTH=\"148\" HEIGHT=\"300\" ALT=\"\"><\/A>\t\t\r\n\r\n\t<\/TD>\r\n\t<\/TR>\r\n\t<\/TABLE>-->\n\n\n\n<\/center><\/div><\/body>"}, "Labs/l6l1logo.html": {"title": "Logo", "html": "<body bgcolor=\"#000000\" onload=\"MM_preloadImages('../images/proposal/navProposal.gif','../images/proposal/navPageNotes.gif','../images/proposal/navGeneralInfo.gif','../images/proposal/navContactMe.gif','../images/proposal/navMainPage.gif')\" text=\"#1e90ff\">\n<!-- -->\n<!-- -->\n<basefont size=\"2\"/>\n<div align=\"center\">\n<!--Header-->\n<h1 align=\"center\"><p>L6L1 Logo <\/p><\/h1>\n<!--EndHeader-->\n<center>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"821\">\n<tr valign=\"Middle\">\n<td><img alt=\"NavBar Proposal\" border=\"0\" height=\"46\" id=\"navbar_home\" loading=\"lazy\" name=\"navbar_proposal\" src=\"../assets/web-one/images/proposal/navProposal_nu.GIF\" width=\"113\"/><\/td>\n<td><img alt=\"NavBar Page Notes\" border=\"0\" height=\"46\" id=\"navbar_ourvision\" loading=\"lazy\" name=\"navbar_pageNotes\" src=\"../assets/web-one/images/proposal/navPageNotes_nu.GIF\" width=\"198\"/><\/td>\n<td><img alt=\"NavBar General Info\" border=\"0\" height=\"46\" id=\"navbar_aboutus\" loading=\"lazy\" name=\"navbar_generalInfo\" src=\"../assets/web-one/images/proposal/navGeneralInfo_nu.GIF\" width=\"198\"/><\/td>\n<td><img alt=\"NavBar Contact Me\" border=\"0\" height=\"46\" id=\"navbar_artworktransfer\" loading=\"lazy\" name=\"navbar_contactMe\" src=\"../assets/web-one/images/proposal/navContactMe_nu.GIF\" width=\"183\"/><\/td>\n<td><img alt=\"NavBar Main Page\" border=\"0\" height=\"46\" id=\"navbar_contactus\" loading=\"lazy\" name=\"navbar_mainPage\" src=\"../assets/web-one/images/proposal/navMainPage_nu.GIF\" width=\"146\"/><\/td>\n<\/tr><\/table>\n<table border=\"0\" cellpadding=\"2\" cellspacing=\"2\" width=\"890\">\n<tr valign=\"Top\">\n<td align=\"Left\">\n<table border=\"0\" cellpadding=\"4\" cellspacing=\"4\" width=\"50%\">\n<tr valign=\"Center\">\n<td align=\"center\"><font face=\"Arial\" size=\"4\">\n<img alt=\"\" border=\"0\" height=\"426\" loading=\"lazy\" src=\"../assets/web-one/images/sideBars/me4.bmp\" width=\"208\"/>\n<\/font><\/td>\n<\/tr>\n<\/table>\n<td align=\"Center\">\n<table border=\"0\" cellpadding=\"4\" cellspacing=\"4\" width=\"100%\">\n<tr valign=\"Center\">\n<td align=\"Left\"><font face=\"Arial\" size=\"2\">\n<center><img alt=\"\" border=\"0\" height=\"34\" loading=\"lazy\" src=\"../assets/web-one/images/mainNav/mainNavT.bmp\" width=\"650\"/><\/center><br/>\n<center><font size=\"8\"> MY LOGO IS VISIBLE<font><\/font><\/font><\/center>\n<center><font size=\"8\">TO THE LEFT<font><\/font><\/font><\/center>\n<p> <center><a class=\"linkBar\" href=\"#/page/index.html\">Home   <\/a>Assignments   Labs   \r\n\t<\/center><\/p>\n<p><center><span style=\"background-color: #000000\"><img alt=\"\" border=\"0\" height=\"34\" loading=\"lazy\" src=\"../assets/web-one/images/mainNav/mainNavB.bmp\" width=\"650\"/> <\/span><\/center>\n<\/p><\/font><\/td>\n<\/tr>\n<\/table>\n<!--<TD ALIGN=\"Right\">\r\n\t<TABLE BORDER=0 CELLPADDING=4 CELLSPACING=4 WIDTH=\"50%\">\r\n   \t<TR VALIGN=\"Center\"> \r\n\t<TD ALIGN=\"center\"><FONT SIZE=\"4\" FACE=\"Arial\">\r\n\t<img src=\"../images/sideBars/sideBarR.bmp\"BORDER=0 WIDTH=\"148\" HEIGHT=\"300\" ALT=\"\"><\/A>\t\t\r\n\r\n\t<\/TD>\r\n\t<\/TR>\r\n\t<\/TABLE>-->\n<\/td>\n<\/td><\/tr>\n<\/table>\n<\/center><\/div><\/body>"}, "Labs/l5l1tables.html": {"title": "Tables", "html": "<body bgcolor=\"#000000\" onload=\"MM_preloadImages('../images/proposal/navProposal.gif','../images/proposal/navPageNotes.gif','../images/proposal/navGeneralInfo.gif','../images/proposal/navContactMe.gif','../images/proposal/navMainPage.gif')\" text=\"#1e90ff\">\n<!-- -->\n<!-- -->\n<basefont size=\"2\"/>\n<div align=\"center\">\n<!--Header-->\n<h1 align=\"center\"><p>L5L1 Table Example <\/p><\/h1>\n<!--EndHeader-->\n<center>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"821\">\n<tr valign=\"Middle\">\n<td><img alt=\"NavBar Proposal\" border=\"0\" height=\"46\" id=\"navbar_home\" loading=\"lazy\" name=\"navbar_proposal\" src=\"../assets/web-one/images/proposal/navProposal_nu.GIF\" width=\"113\"/><\/td>\n<td><img alt=\"NavBar Page Notes\" border=\"0\" height=\"46\" id=\"navbar_ourvision\" loading=\"lazy\" name=\"navbar_pageNotes\" src=\"../assets/web-one/images/proposal/navPageNotes_nu.GIF\" width=\"198\"/><\/td>\n<td><img alt=\"NavBar General Info\" border=\"0\" height=\"46\" id=\"navbar_aboutus\" loading=\"lazy\" name=\"navbar_generalInfo\" src=\"../assets/web-one/images/proposal/navGeneralInfo_nu.GIF\" width=\"198\"/><\/td>\n<td><img alt=\"NavBar Contact Me\" border=\"0\" height=\"46\" id=\"navbar_artworktransfer\" loading=\"lazy\" name=\"navbar_contactMe\" src=\"../assets/web-one/images/proposal/navContactMe_nu.GIF\" width=\"183\"/><\/td>\n<td><img alt=\"NavBar Main Page\" border=\"0\" height=\"46\" id=\"navbar_contactus\" loading=\"lazy\" name=\"navbar_mainPage\" src=\"../assets/web-one/images/proposal/navMainPage_nu.GIF\" width=\"146\"/><\/td>\n<\/tr><\/table>\n<table border=\"0\" cellpadding=\"2\" cellspacing=\"2\" width=\"890\">\n<tr valign=\"Top\">\n<td align=\"Left\">\n<table border=\"0\" cellpadding=\"4\" cellspacing=\"4\" width=\"50%\">\n<tr valign=\"Center\">\n<td align=\"center\"><font face=\"Arial\" size=\"4\">\n<img alt=\"\" border=\"0\" height=\"426\" loading=\"lazy\" src=\"../assets/web-one/images/sideBars/me4.bmp\" width=\"208\"/>\n<\/font><\/td>\n<\/tr>\n<\/table>\n<td align=\"Center\">\n<table border=\"0\" cellpadding=\"4\" cellspacing=\"4\" width=\"100%\">\n<tr valign=\"Center\">\n<td align=\"Left\"><font face=\"Arial\" size=\"2\">\n<center><img alt=\"\" border=\"0\" height=\"34\" loading=\"lazy\" src=\"../assets/web-one/images/mainNav/mainNavT.bmp\" width=\"650\"/><\/center><br/>\n<center><table border=\"2\" cellpading=\"4\" cellspacing=\"2\" width=\"75%\">\n<tr><td>r1c1<\/td><td>r1c2<\/td><td>r1c3<\/td><\/tr>\n<tr><td>r2c1<\/td><td>r2c2<\/td><td>r2c2<\/td><\/tr>\n<tr><td>r3c1<\/td><td>r3c2<\/td><td>r3c3<\/td><\/tr>\n<tr><td>r4c1<\/td><td>r4c2<\/td><td>r4c3<\/td><\/tr>\n<\/table>\n<p> <center><a class=\"linkBar\" href=\"#/page/index.html\">Home   <\/a>Assignments   Labs   \r\n\t<\/center><\/p>\n<p><center><span style=\"background-color: #000000\"><img alt=\"\" border=\"0\" height=\"34\" loading=\"lazy\" src=\"../assets/web-one/images/mainNav/mainNavB.bmp\" width=\"650\"/> <\/span><\/center>\n<\/p><\/center><\/font><\/td>\n<\/tr>\n<\/table>\n<!--<TD ALIGN=\"Right\">\r\n\t<TABLE BORDER=0 CELLPADDING=4 CELLSPACING=4 WIDTH=\"50%\">\r\n   \t<TR VALIGN=\"Center\"> \r\n\t<TD ALIGN=\"center\"><FONT SIZE=\"4\" FACE=\"Arial\">\r\n\t<img src=\"../images/sideBars/sideBarR.bmp\"BORDER=0 WIDTH=\"148\" HEIGHT=\"300\" ALT=\"\"><\/A>\t\t\r\n\r\n\t<\/TD>\r\n\t<\/TR>\r\n\t<\/TABLE>-->\n<\/td>\n<\/td><\/tr>\n<\/table>\n<\/center><\/div><\/body>"}, "Labs/projectL1L2.html": {"title": "Software exercise", "html": "<body>\n\n<h2>Getting Started with Wonder Software<\/h2>\n<p>In this section you'll learn how to add a new user to the Wonder database.\r\n\r\n<h3>To add a new user:<\/h3>\n<ol>\n<li>Open the <b>Admin menu<\/b> and select <b>Users<\/b>\n<li>Choose the <b>Add User...<\/b> button.\r\n\r\n<li>Enter the necessary user information.\r\n<\/li><\/li><\/li><\/ol>\n<p>\r\nNote: Make sure to enter a value in all of the user information fields. If you skip a field, the Wonder database will reject the record. \r\n\r\n\r\n\r\n \r\n<b> Non-Working Links :<b><br/><br/>\r\nThe top navigation bar on submitted assignments L2 - L5 dose not work.<br/>\r\nI overlooked changing the href's for my Nav bar to reference server.<br/>\r\nEverything thing works on server  Shawn's Page\n<\/b><\/b><\/p><\/p><\/body>"}, "Labs/bluray2.html": {"title": "Page review", "html": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0 Transitional//EN\">\n\n<html>\nHttp://www.sciencewatch.com/jan-feb2000/sw_page3.htm<br/>\n<br/>\r\n\tI chose this page specifically because\r\nit is an old article \r\n<br/>\r\n\ton Blue Ray development. As the older\r\ndocuments say\r\n<br/>\tBlue Ray technology will be in large\r\ndemand as soon as \r\n<br/>\tthey become available and meet\r\nstandards.<br/><br/>\r\n\r\n\tBlue Ray technology is now highly\r\nadvertised and pushed \r\n<br/>\ton the market. Which is why I found it\r\nmuch easier in 2003\r\n<br/>\tto find information pertaining to the\r\ndevelopment and \r\n<br/>\r\n\tvulnerabilities of blue laser\r\ntechnologies without skimming \r\n<br/>\r\n\tthrough all of the advertisements and\r\nsales pitches. \r\n<br/><br/>\r\n\tGOALS OF PAGE:\r\n<br/>\r\n\t        The goal of this page is to\r\ninform and entertain<br/>\r\n\tthe reader as a summarized biography\r\nof one mans trials<br/>\r\n\tin the development of LED and LASER\r\ntechnologies.<br/>\r\n\tThis page is more specific to\r\ninforming reader of \r\n<br/>\n<font face=\"Times New Roman\"><font size=\"3\"><i><span style=\"font-weight: medium\">Nichia\r\n's Shuji Nakamura's <\/span><\/i><\/font><\/font><font face=\"Times New Roman\"><font size=\"3\"><span style=\"font-style: normal\"><span style=\"font-weight: medium\">success\r\nin the creation of a <\/span><\/span><\/font><\/font>\n<br/>\n<font face=\"Times New Roman\"><font size=\"3\"><span style=\"font-style: normal\"><span style=\"font-weight: medium\">\tblue\r\nlaser diode.<\/span><\/span><\/font><\/font>\n\n<\/html>"}};
-const nav=document.getElementById('nav'), main=document.getElementById('original');
-function render(){let key=decodeURIComponent(location.hash.replace(/^#\/page\//,''));if(!pages[key])key='index.html';nav.innerHTML=Object.entries(pages).map(([k,p])=>`<a href="#/page/${k}" class="${k===key?'current':''}">${p.title}</a>`).join('');main.innerHTML=pages[key].html;document.title=pages[key].title+' · Web Design';}
-window.addEventListener('hashchange',render);render();
-</script></body></html>
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Web Design 152-101 · Original Site</title>
+    <style>
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            margin: 0;
+            background: #090c16;
+            color: #9dc8ff;
+            font: 15px/1.5 Arial, sans-serif
+        }
+
+        a {
+            color: #76caff
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            background: #0b1120;
+            border-bottom: 1px solid #345478;
+            z-index: 5;
+            padding: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px
+        }
+
+        nav a {
+            text-decoration: none;
+            border: 1px solid #2f517b;
+            border-radius: 6px;
+            padding: 5px 9px;
+            background: #152b47;
+            color: #c2deff
+        }
+
+        nav a.current {
+            background: #2768ac;
+            color: white
+        }
+
+        #original {
+            max-width: 100%;
+            overflow: auto;
+            padding: 10px 8px 20px;
+            min-height: 480px
+        }
+
+        #original table {
+            max-width: 100%;
+            width: auto !important;
+            min-width: 0 !important
+        }
+
+        #original td {
+            max-width: 100%;
+            min-width: 0 !important
+        }
+
+        #original img {
+            max-width: 100%;
+            height: auto !important
+        }
+
+        #original * {
+            box-sizing: border-box
+        }
+
+        #original h1 {
+            font-size: 21px
+        }
+
+        #original [align=center] {
+            max-width: 100%
+        }
+
+        #original a[href^="#/page/"] {
+            color: #8ee4ff
+        }
+
+        #original font {
+            color: inherit
+        }
+
+        #original img {
+            object-fit: contain
+        }
+
+        #original p {
+            margin: .6em 0
+        }
+
+        #original table {
+            margin: auto
+        }
+
+        body .archived-note {
+            padding: 10px 14px;
+            background: #12243d;
+            font-size: 12px;
+            color: #b7d3f6
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="nav" aria-label="Original site sections"></nav>
+    <div id="original"></div>
+    <div class="archived-note">Original 2008–2009 design and embedded graphics, with internal navigation reconnected.
+        Old external links and contact forms are intentionally omitted.</div>
+    <script>
+        const pages = {
+            "index.html": {
+                title: "Home",
+                html: /*html*/
+                    `<body bgcolor="#000000" onload="MM_preloadImages('images/proposal/navProposal.gif',
+                'images/proposal/navPageNotes.gif','images/proposal/navGeneralInfo.gif',
+                'images/proposal/navContactMe.gif','images/proposal/navMainPage.gif')" text="#1e90ff">
+                        <!-- --> <!-- -->
+                        <basefont size="2"/><div align="center">
+                            <h1 align="center"><p>Class 152-101 Home/L3A1 Site Spec </p></h1>
+                            <center>
+                                <table border="0" cellpadding="0" cellspacing="0" width="821">
+                                    <tr valign="Middle"><td><img alt="NavBar Proposal" border="0" height="46" id="navbar_home" loading="lazy" name="navbar_proposal" src="../assets/web-one/images/proposal/navProposal_nu.GIF" width="113"/></td>
+                                    <td><img alt="NavBar Page Notes" border="0" height="46" id="navbar_ourvision" loading="lazy" name="navbar_pageNotes" src="../assets/web-one/images/proposal/navPageNotes_nu.GIF" width="198"/></td>
+                                    <td><img alt="NavBar General Info" border="0" height="46" id="navbar_aboutus" loading="lazy" name="navbar_generalInfo" src="../assets/web-one/images/proposal/navGeneralInfo_nu.GIF" width="198"/></td>
+                                    <td><img alt="NavBar Contact Me" border="0" height="46" id="navbar_artworktransfer" loading="lazy" name="navbar_contactMe" src="../assets/web-one/images/proposal/navContactMe_nu.GIF" width="183"/></td>
+                                    <td><img alt="NavBar Main Page" border="0" height="46" id="navbar_contactus" loading="lazy" name="navbar_mainPage" src="../assets/web-one/images/proposal/navMainPage_nu.GIF" width="146"/></td>
+                                    </tr>
+                                </table>
+                                <table border="0" cellpadding="2" cellspacing="2" width="890">
+                                    <tr valign="Top"><td align="Left">
+                                        <table border="0" cellpadding="4" cellspacing="4" width="50%">
+                                            <tr valign="Center">
+                                            <td align="center"><font face="Arial" size="4">
+                                            <img alt="" border="0" height="426" loading="lazy" src="../assets/web-one/images/sideBars/me4.bmp" width="208"/>
+                                            </font></td>
+                                            </tr>
+                                        </table>
+                                    <td align="Center">
+                                        <table border="0" cellpadding="4" cellspacing="4" width="100%">
+                                        <tr valign="Center">
+                                        <td align="Left"><font face="Arial" size="2">
+                                        <center><img alt="" border="0" height="34" loading="lazy" src="../assets/web-one/images/mainNav/mainNavT.bmp" width="650"/></center><br/>
+                                        <center>Welcome to Shawn's Web Design and Development Page.</center>
+                                        <center>In the following pages I will demonstrate, navigational structure,</center>
+                                        <center>design layout, consistancy between pages &amp; basic CSS + jscript.</center><br/>
+                                        <center>The audience this page is designed for is a programing  instructor,</center>
+                                        <center>specificaly James Kiley. This site is only a demonstration. If I want</center>
+                                        <center>to know more about programing instuctors I would ask the instructors</center>
+                                        <center>I communicate with frequently.</center><br/>
+                                        <center>The success of this site is based on the grade I recieve,</center>
+                                        <center> thus my goal is also to aquire a great grade.</center>
+                                        <p><center>\r
+                                        View Flow Chart For This Site</center></p>
+                                        <p><center>\r
+                                        View Layout For This Site</center></p>
+                                        <p><center>\r
+                                        Dynamic Navigation Idea Explained</center></p>
+                                        <p><center>\r
+                                        Links To Pages Used As Resources</center></p>
+                                        <p> <center><a class="linkBar" href="#/page/index.html">Home   </a>Assignments   Labs   \r
+                                    </center></p>
+                                        <p><center><span style="background-color: #000000"><img alt="" border="0" height="34" loading="lazy" src="../assets/web-one/images/mainNav/mainNavB.bmp" width="650"/> </span></center>
+                                        </p></font></td>
+                                        </tr>
+                                    </table>
+                                    </td>
+                                    </td></tr>
+                                </table>
+                            </center></div></body>  `
+            },
+            "Assignments/proposal.html": {
+                title: "Proposal",
+                html: /*html*/ `<body bgcolor="#000000" onload="MM_preloadImages('../images/proposal/navProposal.gif','../images/proposal/navPageNotes.gif','../images/proposal/navGeneralInfo.gif','../images/proposal/navContactMe.gif','../images/proposal/navMainPage.gif')" text="#1e90ff">
+                        <basefont size="2"/>
+                        <div align="center">
+                            <h1 align="center"><p>Children &amp; The Internet Proposal </p></h1>
+                            <center>
+                                <table border="0" cellpadding="0" cellspacing="0" width="821">
+                                    <tr valign="Middle">
+                                    <td><a href="#/page/Assignments/proposal.html"><img alt="NavBar Proposal" border="0" height="46" id="navbar_home" loading="lazy" name="navbar_proposal" src="../assets/web-one/images/proposal/navProposal_nu.GIF" width="113"/></a></td>
+                                    <td><a href="#/page/Assignments/pageNotes.html"><img alt="NavBar Page Notes" border="0" height="46" id="navbar_ourvision" loading="lazy" name="navbar_pageNotes" src="../assets/web-one/images/proposal/navPageNotes_nu.GIF" width="198"/></a></td>
+                                    <td><img alt="NavBar General Info" border="0" height="46" id="navbar_aboutus" loading="lazy" name="navbar_generalInfo" src="../assets/web-one/images/proposal/navGeneralInfo_nu.GIF" width="198"/></td>
+                                    <td><img alt="NavBar Contact Me" border="0" height="46" id="navbar_artworktransfer" loading="lazy" name="navbar_contactMe" src="../assets/web-one/images/proposal/navContactMe_nu.GIF" width="183"/></td>
+                                    <td><img alt="NavBar Main Page" border="0" height="46" id="navbar_contactus" loading="lazy" name="navbar_mainPage" src="../assets/web-one/images/proposal/navMainPage_nu.GIF" width="146"/></td>
+                                    </tr></table>
+                                <table border="0" cellpadding="2" cellspacing="2" width="890">
+                                    <tr valign="Top">
+                                    <td align="Left">
+                                    <table border="0" cellpadding="4" cellspacing="4" width="50%">
+                                    <tr valign="Center">
+                                    <td align="center"><font face="Arial" size="2"><br/>\r
+                                            This proposal is for a site other than<br/>\r
+                                            this one. That I might like to create<br/>
+                                    <img alt="" border="0" height="426" loading="lazy" src="../assets/web-one/images/sideBars/me4.bmp" width="208"/>
+                                    </font></td>
+                                    </tr>
+                                </table>
+                                    <td align="Center">
+                                    <table border="0" cellpadding="4" cellspacing="4" width="100%">
+                                    <tr valign="Center">
+                                    <td align="Left"><font face="Arial" size="2">
+                                    <center><img alt="" border="0" height="34" loading="lazy" src="../assets/web-one/images/mainNav/mainNavT.bmp" width="650"/></center><br/>\r
+                                    Target Audience: <br/>\r
+                                            &amp;nbspAny one with children or in direct relation with the learning and growth prowess of a child.<br/>\r
+                                            &amp;nbspThe site may be of use to schools, churches, children's summer camps, libraries or parents<br/>
+                                    <p>Main Objective:<br/>\r
+                                    \r
+                                            &amp;nbspInform and keep informed of barriers faced limitting what children view on line.<br/>
+                                    <p>\r
+                                    \r
+                                    \r
+                                    User Assessment:<br/>\r
+                                            &amp;nbspI would track site hits with a view counter. I would also create an area for user feedback<br/>\r
+                                            &amp;nbspsubmissions<br/>
+                                    <p>Ideas:<br/>\r
+                                    \r
+                                            &amp;nbspProgram review "page".  Reviews of filtering programs.<br/>\r
+                                    \r
+                                            &amp;nbspOverview "page" of the laws protecting minors on the internet.<br/>\r
+                                    \r
+                                            &amp;nbspDevelopers help "page" on how not to be rejected by filters<br/>\r
+                                    \r
+                                            &amp;nbspData on monkies digesting bad internet media may prove benificial. / NBC news clips<br/>
+                                    <p>Limiting Factors:<br/>\r
+                                    \r
+                                            &amp;nbspTesting of vast amounts of filtering programs may be overwhelming. <br/>\r
+                                            &amp;nbspEffort put forth may be better suited to two or more  individuals<br/>\r
+                                                "Keep viewers informed" meens staying up to date as the media changes.<br/> \r
+                                            &amp;nbspMust have a dedicated individual to do that. \r
+                                    <p> <center><a class="linkBar" href="#/page/index.html">Home   </a>Assignments   Labs   \r
+                                </center></p>
+                                    <p><center><span style="background-color: #000000"><img alt="" border="0" height="34" loading="lazy" src="../assets/web-one/images/mainNav/mainNavB.bmp" width="650"/> </span></center>
+                                    </p></p></p></p></p></font></td>
+                                    </tr>
+                                </table>
+                                    <!--<TD ALIGN="Right">\r
+                                        <TABLE BORDER=0 CELLPADDING=4 CELLSPACING=4 WIDTH="50%">\r
+                                        <TR VALIGN="Center"> \r
+                                        <TD ALIGN="center"><FONT SIZE="4" FACE="Arial">\r
+                                        <img src="../images/sideBars/sideBarR.bmp"BORDER=0 WIDTH="148" HEIGHT="300" ALT=""></A>		\r
+                                    \r
+                                        </TD>\r
+                                        </TR>\r
+                                    </TABLE>-->
+                                    </td>
+                                    </td></tr>
+                                </table>
+                            </center></div></body>  `
+            },
+            "Assignments/pageNotes.html": {
+                title: "Design notes",
+                html: /*html*/ `<body bgcolor="#000000" onload="MM_preloadImages('../images/proposal/navProposal.gif','../images/proposal/navPageNotes.gif','../images/proposal/navGeneralInfo.gif','../images/proposal/navContactMe.gif','../images/proposal/navMainPage.gif')" text="#1e90ff">
+                        <!-- -->
+                        <!-- -->
+                        <basefont size="2"/>
+                        <div align="center">
+                            <!--Header-->
+                            <h1 align="center"><p>Class 152-101 Home/L3A1 Site Spec </p></h1>
+                            <!--EndHeader-->
+                            <center>
+                                <table border="0" cellpadding="0" cellspacing="0" width="821">
+                                    <tr valign="Middle">
+                                    <td><img alt="NavBar Proposal" border="0" height="46" id="navbar_home" loading="lazy" name="navbar_proposal" src="../assets/web-one/images/proposal/navProposal_nu.GIF" width="113"/></td>
+                                    <td><img alt="NavBar Page Notes" border="0" height="46" id="navbar_ourvision" loading="lazy" name="navbar_pageNotes" src="../assets/web-one/images/proposal/navPageNotes_nu.GIF" width="198"/></td>
+                                    <td><img alt="NavBar General Info" border="0" height="46" id="navbar_aboutus" loading="lazy" name="navbar_generalInfo" src="../assets/web-one/images/proposal/navGeneralInfo_nu.GIF" width="198"/></td>
+                                    <td><img alt="NavBar Contact Me" border="0" height="46" id="navbar_artworktransfer" loading="lazy" name="navbar_contactMe" src="../assets/web-one/images/proposal/navContactMe_nu.GIF" width="183"/></td>
+                                    <td><img alt="NavBar Main Page" border="0" height="46" id="navbar_contactus" loading="lazy" name="navbar_mainPage" src="../assets/web-one/images/proposal/navMainPage_nu.GIF" width="146"/></td>
+                                    </tr></table>
+                                <table border="0" cellpadding="2" cellspacing="2" width="890">
+                                    <tr valign="Top">
+                                    <td align="Left">
+                                    <table border="0" cellpadding="4" cellspacing="4" width="50%">
+                                    <tr valign="Center">
+                                    <td align="center"><font face="Arial" size="4">
+                                    <img alt="" border="0" height="426" loading="lazy" src="../assets/web-one/images/sideBars/me4.bmp" width="208"/>
+                                    </font></td>
+                                    </tr>
+                                </table>
+                                    <td align="Center">
+                                    <table border="0" cellpadding="4" cellspacing="4" width="100%">
+                                    <tr valign="Center">
+                                    <td align="Left"><font face="Arial" size="2">
+                                    <center><img alt="" border="0" height="34" loading="lazy" src="../assets/web-one/images/mainNav/mainNavT.bmp" width="650"/></center><br/>\r
+                                    This page started out as three nested tables with a little picture in the middle at the beginning of fall semester 2007 at WITC New Richmond.\r
+                                    I have throughout the semester tryed jscrip scroll boxes as part of this page design, though it didn't work out I  aquired a little practice in jscript.<br/><br/>\r
+                                    I have also during this semester used CSS to change the color of my scroll bars, links and intend to futher my knowledge in CSS.<br/><br/>\r
+                                    \r
+                                    I went on a venture with xml files and active controls for about two days strait trying to figure out how I can load data into a table from an xml file.\r
+                                    One of the recources I found in this venture that helped a lot, ImportXml<br/><br/>\r
+                                    \r
+                                    The picture I used for my LOGO was taken fall of 2007. I was dressed up in an attempt of self reflection to see how those around me acted differently.<br/>
+                                    <p> <center><a class="linkBar" href="#/page/index.html">Home   </a>Assignments   Labs   \r
+                                </center></p>
+                                    <p><center><span style="background-color: #000000"><img alt="" border="0" height="34" loading="lazy" src="../assets/web-one/images/mainNav/mainNavB.bmp" width="650"/> </span></center>
+                                    </p></font></td>
+                                    </tr>
+                                </table>
+                                    <!--<TD ALIGN="Right">\r
+                                        <TABLE BORDER=0 CELLPADDING=4 CELLSPACING=4 WIDTH="50%">\r
+                                        <TR VALIGN="Center"> \r
+                                        <TD ALIGN="center"><FONT SIZE="4" FACE="Arial">\r
+                                        <img src="../images/sideBars/sideBarR.bmp"BORDER=0 WIDTH="148" HEIGHT="300" ALT=""></A>		\r
+                                    \r
+                                        </TD>\r
+                                        </TR>\r
+                                    </TABLE>-->
+                                    </td>
+                                    </td></tr>
+                                </table>
+                            </center></div></body>  `
+            },
+            "Assignments/outline.html": {
+                title: "Site map",
+                html: /*html*/ `<body bgcolor="#000000" onload="MM_preloadImages('../images/proposal/navProposal.gif','../images/proposal/navPageNotes.gif','../images/proposal/navGeneralInfo.gif','../images/proposal/navContactMe.gif','../images/proposal/navMainPage.gif')" text="#1e90ff">
+                        <!-- -->
+                        <!-- -->
+                        <basefont size="2"/>
+                        <div align="center">
+                            <!--Header-->
+                            <h1 align="center"><p>L3A2 Flow Chart for This Site </p></h1>
+                            <!--EndHeader-->
+                            <center>
+                                <table border="0" cellpadding="0" cellspacing="0" width="821">
+                                    <tr valign="Middle">
+                                    <td><a href="#/page/Assignments/proposal.html"><img alt="NavBar Proposal" border="0" height="46" id="navbar_home" loading="lazy" name="navbar_proposal" src="../assets/web-one/images/proposal/navProposal_nu.GIF" width="113"/></a></td>
+                                    <td><a href="#/page/Assignments/pageNotes.html"><img alt="NavBar Page Notes" border="0" height="46" id="navbar_ourvision" loading="lazy" name="navbar_pageNotes" src="../assets/web-one/images/proposal/navPageNotes_nu.GIF" width="198"/></a></td>
+                                    <td><img alt="NavBar General Info" border="0" height="46" id="navbar_aboutus" loading="lazy" name="navbar_generalInfo" src="../assets/web-one/images/proposal/navGeneralInfo_nu.GIF" width="198"/></td>
+                                    <td><img alt="NavBar Contact Me" border="0" height="46" id="navbar_artworktransfer" loading="lazy" name="navbar_contactMe" src="../assets/web-one/images/proposal/navContactMe_nu.GIF" width="183"/></td>
+                                    <td><img alt="NavBar Main Page" border="0" height="46" id="navbar_contactus" loading="lazy" name="navbar_mainPage" src="../assets/web-one/images/proposal/navMainPage_nu.GIF" width="146"/></td>
+                                    </tr></table>
+                                <table border="0" cellpadding="2" cellspacing="2" width="890">
+                                    <tr valign="Top">
+                                    <td align="Left">
+                                    <table border="0" cellpadding="4" cellspacing="4" width="230">
+                                    <tr valign="TOP">
+                                    <td align="left"><font face="Arial" size="2"><br/><br/>\r
+                                            I Chose This Structure Because:<br/><br/>\r
+                                            It allows me fairly seemless <br/>\r
+                                            navigation between my pages.<br/><br/>\r
+                                            It is simple to understand<br/>\r
+                                            and easy to portray for me.<br/><br/>\r
+                                            This flow chart should show<br/>\r
+                                            that you can access all the main<br/>\r
+                                            contents, home or contact from <br/>\r
+                                            any where. Also shows you can't<br/>\r
+                                            access a lab from an assignment.<br/>\r
+                                            Or Vice Versa<br/><br/>\r
+                                            This site meets all requirments of <br/>\r
+                                            L3A2. This page is extra.<br/>
+                                    <!--<img src="../images/sideBars/me4.bmp"BORDER=0 WIDTH="208" HEIGHT="426" ALT=""></A>-->
+                                    </font></td>
+                                    </tr>
+                                </table>
+                                    <td align="Center">
+                                    <table border="0" cellpadding="4" cellspacing="4" width="100%">
+                                    <tr valign="Center">
+                                    <td align="Left"><font face="Arial" size="2">
+                                    <center><img alt="" border="0" height="34" loading="lazy" src="../assets/web-one/images/mainNav/mainNavT.bmp" width="650"/></center><br/>
+                                    <center><img alt="" bight="357" border="0" loading="lazy" src="../assets/web-one/images/misc/outline.bmp" width"442"=""/></center>
+                                    <p> <center><a class="linkBar" href="#/page/index.html">Home   </a>Assignments   Labs   \r
+                                </center></p>
+                                    <p><center><span style="background-color: #000000"><img alt="" border="0" height="34" loading="lazy" src="../assets/web-one/images/mainNav/mainNavB.bmp" width="650"/> </span></center>
+                                    </p></font></td>
+                                    </tr>
+                                </table>
+                                    <!--<TD ALIGN="Right">\r
+                                        <TABLE BORDER=0 CELLPADDING=4 CELLSPACING=4 WIDTH="50%">\r
+                                        <TR VALIGN="Center"> \r
+                                        <TD ALIGN="center"><FONT SIZE="4" FACE="Arial">\r
+                                        <img src="../images/sideBars/sideBarR.bmp"BORDER=0 WIDTH="148" HEIGHT="300" ALT=""></A>		\r
+                                    \r
+                                        </TD>\r
+                                        </TR>\r
+                                    </TABLE>-->
+                                    </td>
+                                    </td></tr>
+                                </table>
+                            </center></div></body>  `
+            },
+            "Labs/l3l1.html": {
+                title: "Page goals",
+                html: /*html*/ `<body bgcolor="#000000" onload="MM_preloadImages('../images/proposal/navProposal.gif','../images/proposal/navPageNotes.gif','../images/proposal/navGeneralInfo.gif','../images/proposal/navContactMe.gif','../images/proposal/navMainPage.gif')" text="#1e90ff">
+                        <!-- -->
+                        <!-- -->
+                        <basefont size="2"/>
+                        <div align="center">
+                            <!--Header-->
+                            <h1 align="center"><p>L3L1 / <font color="green">PART 1</font></p></h1>
+                            <center><font color="#BBDDB88" face="Arial" size="2">Goals of a page I like</font></center>
+                            <!--EndHeader-->
+                            <center>
+                                <table border="0" cellpadding="0" cellspacing="0" width="821">
+                                    <tr valign="Middle">
+                                    <td><img alt="NavBar Proposal" border="0" height="46" id="navbar_home" loading="lazy" name="navbar_proposal" src="../assets/web-one/images/proposal/navProposal_nu.GIF" width="113"/></td>
+                                    <td><img alt="NavBar Page Notes" border="0" height="46" id="navbar_ourvision" loading="lazy" name="navbar_pageNotes" src="../assets/web-one/images/proposal/navPageNotes_nu.GIF" width="198"/></td>
+                                    <td><img alt="NavBar General Info" border="0" height="46" id="navbar_aboutus" loading="lazy" name="navbar_generalInfo" src="../assets/web-one/images/proposal/navGeneralInfo_nu.GIF" width="198"/></td>
+                                    <td><img alt="NavBar Contact Me" border="0" height="46" id="navbar_artworktransfer" loading="lazy" name="navbar_contactMe" src="../assets/web-one/images/proposal/navContactMe_nu.GIF" width="183"/></td>
+                                    <td><img alt="NavBar Main Page" border="0" height="46" id="navbar_contactus" loading="lazy" name="navbar_mainPage" src="../assets/web-one/images/proposal/navMainPage_nu.GIF" width="146"/></td>
+                                    </tr></table>
+                                <table border="0" cellpadding="2" cellspacing="2" width="890">
+                                    <tr valign="Top">
+                                    <td align="Left">
+                                    <table border="0" cellpadding="4" cellspacing="4" width="100%">
+                                    <tr valign="Center">
+                                    <td align="left"><font color="#BBDDB88" face="Arial" size="2">
+                                    <a href="#/page/Labs/l3l1p2.html">View Part 2</a><br/><br/>\r
+                                            A quote from Nakamura <br/>\r
+                                            about his research<br/>\r
+                                            "Shows that anybody with<br/> relatively \r
+                                            little special<br/> experience in the field, \r
+                                            no big<br/> money, and no collaborations<br/> \r
+                                            with universities or other<br/> companies,\r
+                                            can achieve<br/> considerable success alone<br/>\r
+                                            when he tries a new research<br/> area without\r
+                                            being<br/> obsessed with conventional<br/> ideas\r
+                                            and knowledge."\r
+                                            \r
+                                                    \r
+                                    \r
+                                            \r
+                                        </font></td>
+                                    </tr>
+                                </table>
+                                    <td>
+                                    <table border="0" cellpadding="4" cellspacing="4" width="100%">
+                                    <tr valign="Center">
+                                    <td align="Left"><font face="Arial" size="2">
+                                    <center><img alt="" border="0" height="34" loading="lazy" src="../assets/web-one/images/mainNav/mainNavT.bmp" width="650"/></center></font></td></tr>
+                                    <tr><table border="0" cellpadding="4" cellspacing="4" width="80%">
+                                    <tr valign="Center">
+                                    <td align="Left"><font face="Arial" size="2">\r
+                                                        </font></td>
+                                    <td align="Left"><font face="Arial" size="2">
+                                    http://www.sciencewatch.com/jan-feb2000/sw_jan-feb2000_page3.htm<br/>
+                                    <br/>\r
+                                            I chose this page specifically because\r
+                                            it is an old article \r
+                                            <br/>\r
+                                            on Blue Ray development. As the older\r
+                                            documents say\r
+                                            <br/>\r
+                                            Blue Ray technology will be in large\r
+                                            demand as soon as \r
+                                            <br/>	\r
+                                            they become available and meet\r
+                                            standards.\r
+                                            <br/><br/>\r
+                                            Blue Ray technology is now highly\r
+                                            advertised and pushed \r
+                                            <br/>	\r
+                                            on the market. Which is why I found it\r
+                                            much easier in 2003\r
+                                            <br/>	\r
+                                            to find information pertaining to the\r
+                                            development and \r
+                                            <br/>\r
+                                            vulnerabilities of blue laser\r
+                                            technologies without skimming \r
+                                            <br/>\r
+                                            through all of the advertisements and\r
+                                            sales pitches. \r
+                                            <br/><br/>\r
+                                            GOALS OF PAGE:\r
+                                            <br/>\r
+                                                    The goal of this page is to\r
+                                            inform and entertain\r
+                                            <br/>\r
+                                            the reader as a summarized biography\r
+                                            of one mans trials\r
+                                            <br/>\r
+                                            in the development of LED and LASER\r
+                                            technologies.\r
+                                            <br/>\r
+                                            This page is more specific to\r
+                                            informing reader of \r
+                                            <br/>
+                                    <font face="Times New Roman"><font size="3"><i><span style="font-weight: medium">Nichia\r
+                                            's Shuji Nakamura's </span></i></font></font><font face="Times New Roman"><font size="3"><span style="font-style: normal"><span style="font-weight: medium">success\r
+                                            in the creation of a </span></span></font></font>
+                                    <br/>
+                                    <font face="Times New Roman"><font size="3"><span style="font-style: normal"><span style="font-weight: medium">	blue\r
+                                            laser diode.</span></span></font></font>
+                                    </font></td>
+                                    </tr>
+                                </table>
+                                    <p>
+                                    <center><a class="linkBar" href="#/page/index.html">Home   </a>Assignments   Labs   \r
+                                    </center></p>
+                                    <p><center><span style="background-color: #000000"><img alt="" border="0" height="34" loading="lazy" src="../assets/web-one/images/mainNav/mainNavB.bmp" width="650"/> </span></center>
+                                    </p></tr></table></td>
+                                    </td></tr>
+                                </table>
+                                <!--<TD ALIGN="Right">\r
+                                    <TABLE BORDER=0 CELLPADDING=4 CELLSPACING=4 WIDTH="50%">\r
+                                        <TR VALIGN="Center"> \r
+                                        <TD ALIGN="center"><FONT SIZE="4" FACE="Arial">\r
+                                        <img src="../images/sideBars/sideBarR.bmp"BORDER=0 WIDTH="148" HEIGHT="300" ALT=""></A>		\r
+                                    \r
+                                        </TD>\r
+                                        </TR>\r
+                                    </TABLE>-->
+
+
+
+                            </center></div></body>  `
+            },
+            "Labs/l3l1p2.html": {
+                title: "Content types",
+                html: /*html*/ `<body bgcolor="#000000" onload="MM_preloadImages('../images/proposal/navProposal.gif','../images/proposal/navPageNotes.gif','../images/proposal/navGeneralInfo.gif','../images/proposal/navContactMe.gif','../images/proposal/navMainPage.gif')" text="#1e90ff">
+                        <!-- -->
+                        <!-- -->
+                        <basefont size="2"/>
+                        <div align="center">
+                            <!--Header-->
+                            <h1 align="center"><p>L3L1 / <font color="green">PART 2</font></p></h1>
+                            <center><font color="#BBDDB88" face="Arial" size="2">Content Types Of Random Pages</font></center>
+                            <!--EndHeader-->
+                            <center>
+                                <table border="0" cellpadding="0" cellspacing="0" width="821">
+                                    <tr valign="Middle">
+                                    <td><img alt="NavBar Proposal" border="0" height="46" id="navbar_home" loading="lazy" name="navbar_proposal" src="../assets/web-one/images/proposal/navProposal_nu.GIF" width="113"/></td>
+                                    <td><img alt="NavBar Page Notes" border="0" height="46" id="navbar_ourvision" loading="lazy" name="navbar_pageNotes" src="../assets/web-one/images/proposal/navPageNotes_nu.GIF" width="198"/></td>
+                                    <td><img alt="NavBar General Info" border="0" height="46" id="navbar_aboutus" loading="lazy" name="navbar_generalInfo" src="../assets/web-one/images/proposal/navGeneralInfo_nu.GIF" width="198"/></td>
+                                    <td><img alt="NavBar Contact Me" border="0" height="46" id="navbar_artworktransfer" loading="lazy" name="navbar_contactMe" src="../assets/web-one/images/proposal/navContactMe_nu.GIF" width="183"/></td>
+                                    <td><img alt="NavBar Main Page" border="0" height="46" id="navbar_contactus" loading="lazy" name="navbar_mainPage" src="../assets/web-one/images/proposal/navMainPage_nu.GIF" width="146"/></td>
+                                    </tr></table>
+                                <table border="0" cellpadding="2" cellspacing="2" width="890">
+                                    <tr valign="Top">
+                                    <td align="Left">
+                                    <table border="0" cellpadding="4" cellspacing="4" width="100%">
+                                    <tr valign="Center">
+                                    <td align="left"><font color="#BBDDB88" face="Arial" size="2">
+                                    <a href="#/page/Labs/l3l1.html">View Part 1</a><br/><br/>
+                                    <br/>
+                                    <br/>
+                                    <br/>
+                                    <br/>
+                                    <br/>
+                                    <br/>
+                                    <br/>
+                                    <br/>
+                                    <br/>
+                                    <br/>
+                                    <br/>
+                                    <br/>
+                                    </font></td>
+                                    </tr>
+                                </table>
+                                    <td>
+                                    <table border="0" cellpadding="4" cellspacing="4" width="100%">
+                                    <tr valign="Center">
+                                    <td align="Left"><font face="Arial" size="2">
+                                    <center><img alt="" border="0" height="34" loading="lazy" src="../assets/web-one/images/mainNav/mainNavT.bmp" width="650"/></center></font></td></tr>
+                                    <tr><table border="0" cellpadding="4" cellspacing="4" width="80%">
+                                    <tr valign="Center">
+                                    <td align="Left"><font face="Arial" size="2">\r
+                                                        </font></td>
+                                    <td align="Left"><font face="Arial" size="2">
+
+                                    </font></td>
+                                    </tr>
+                                </table>
+                                    <p>
+                                    <center><a class="linkBar" href="#/page/index.html">Home   </a>Assignments   Labs   \r
+                                    </center></p>
+                                    <p><center><span style="background-color: #000000"><img alt="" border="0" height="34" loading="lazy" src="../assets/web-one/images/mainNav/mainNavB.bmp" width="650"/> </span></center>
+                                    </p></tr></table></td>
+                                    </td></tr>
+                                </table>
+                                <!--<TD ALIGN="Right">\r
+                                    <TABLE BORDER=0 CELLPADDING=4 CELLSPACING=4 WIDTH="50%">\r
+                                        <TR VALIGN="Center"> \r
+                                        <TD ALIGN="center"><FONT SIZE="4" FACE="Arial">\r
+                                        <img src="../images/sideBars/sideBarR.bmp"BORDER=0 WIDTH="148" HEIGHT="300" ALT=""></A>		\r
+                                    \r
+                                        </TD>\r
+                                        </TR>\r
+                                    </TABLE>-->
+
+
+
+                            </center></div></body>  `
+            },
+            "Labs/l6l1logo.html": {
+                title: "Logo",
+                html: /*html*/ `<body bgcolor="#000000" onload="MM_preloadImages('../images/proposal/navProposal.gif','../images/proposal/navPageNotes.gif','../images/proposal/navGeneralInfo.gif','../images/proposal/navContactMe.gif','../images/proposal/navMainPage.gif')" text="#1e90ff">
+                        <!-- -->
+                        <!-- -->
+                        <basefont size="2"/>
+                        <div align="center">
+                            <!--Header-->
+                            <h1 align="center"><p>L6L1 Logo </p></h1>
+                            <!--EndHeader-->
+                            <center>
+                                <table border="0" cellpadding="0" cellspacing="0" width="821">
+                                    <tr valign="Middle">
+                                    <td><img alt="NavBar Proposal" border="0" height="46" id="navbar_home" loading="lazy" name="navbar_proposal" src="../assets/web-one/images/proposal/navProposal_nu.GIF" width="113"/></td>
+                                    <td><img alt="NavBar Page Notes" border="0" height="46" id="navbar_ourvision" loading="lazy" name="navbar_pageNotes" src="../assets/web-one/images/proposal/navPageNotes_nu.GIF" width="198"/></td>
+                                    <td><img alt="NavBar General Info" border="0" height="46" id="navbar_aboutus" loading="lazy" name="navbar_generalInfo" src="../assets/web-one/images/proposal/navGeneralInfo_nu.GIF" width="198"/></td>
+                                    <td><img alt="NavBar Contact Me" border="0" height="46" id="navbar_artworktransfer" loading="lazy" name="navbar_contactMe" src="../assets/web-one/images/proposal/navContactMe_nu.GIF" width="183"/></td>
+                                    <td><img alt="NavBar Main Page" border="0" height="46" id="navbar_contactus" loading="lazy" name="navbar_mainPage" src="../assets/web-one/images/proposal/navMainPage_nu.GIF" width="146"/></td>
+                                    </tr></table>
+                                <table border="0" cellpadding="2" cellspacing="2" width="890">
+                                    <tr valign="Top">
+                                    <td align="Left">
+                                    <table border="0" cellpadding="4" cellspacing="4" width="50%">
+                                    <tr valign="Center">
+                                    <td align="center"><font face="Arial" size="4">
+                                    <img alt="" border="0" height="426" loading="lazy" src="../assets/web-one/images/sideBars/me4.bmp" width="208"/>
+                                    </font></td>
+                                    </tr>
+                                </table>
+                                    <td align="Center">
+                                    <table border="0" cellpadding="4" cellspacing="4" width="100%">
+                                    <tr valign="Center">
+                                    <td align="Left"><font face="Arial" size="2">
+                                    <center><img alt="" border="0" height="34" loading="lazy" src="../assets/web-one/images/mainNav/mainNavT.bmp" width="650"/></center><br/>
+                                    <center><font size="8"> MY LOGO IS VISIBLE<font></font></font></center>
+                                    <center><font size="8">TO THE LEFT<font></font></font></center>
+                                    <p> <center><a class="linkBar" href="#/page/index.html">Home   </a>Assignments   Labs   \r
+                                </center></p>
+                                    <p><center><span style="background-color: #000000"><img alt="" border="0" height="34" loading="lazy" src="../assets/web-one/images/mainNav/mainNavB.bmp" width="650"/> </span></center>
+                                    </p></font></td>
+                                    </tr>
+                                </table>
+                                    <!--<TD ALIGN="Right">\r
+                                        <TABLE BORDER=0 CELLPADDING=4 CELLSPACING=4 WIDTH="50%">\r
+                                        <TR VALIGN="Center"> \r
+                                        <TD ALIGN="center"><FONT SIZE="4" FACE="Arial">\r
+                                        <img src="../images/sideBars/sideBarR.bmp"BORDER=0 WIDTH="148" HEIGHT="300" ALT=""></A>		\r
+                                    \r
+                                        </TD>\r
+                                        </TR>\r
+                                    </TABLE>-->
+                                    </td>
+                                    </td></tr>
+                                </table>
+                            </center></div></body>  `
+            },
+            "Labs/l5l1tables.html": {
+                title: "Tables",
+                html: /*html*/ `<body bgcolor="#000000" onload="MM_preloadImages('../images/proposal/navProposal.gif','../images/proposal/navPageNotes.gif','../images/proposal/navGeneralInfo.gif','../images/proposal/navContactMe.gif','../images/proposal/navMainPage.gif')" text="#1e90ff">
+                        <!-- -->
+                        <!-- -->
+                        <basefont size="2"/>
+                        <div align="center">
+                            <!--Header-->
+                            <h1 align="center"><p>L5L1 Table Example </p></h1>
+                            <!--EndHeader-->
+                            <center>
+                                <table border="0" cellpadding="0" cellspacing="0" width="821">
+                                    <tr valign="Middle">
+                                    <td><img alt="NavBar Proposal" border="0" height="46" id="navbar_home" loading="lazy" name="navbar_proposal" src="../assets/web-one/images/proposal/navProposal_nu.GIF" width="113"/></td>
+                                    <td><img alt="NavBar Page Notes" border="0" height="46" id="navbar_ourvision" loading="lazy" name="navbar_pageNotes" src="../assets/web-one/images/proposal/navPageNotes_nu.GIF" width="198"/></td>
+                                    <td><img alt="NavBar General Info" border="0" height="46" id="navbar_aboutus" loading="lazy" name="navbar_generalInfo" src="../assets/web-one/images/proposal/navGeneralInfo_nu.GIF" width="198"/></td>
+                                    <td><img alt="NavBar Contact Me" border="0" height="46" id="navbar_artworktransfer" loading="lazy" name="navbar_contactMe" src="../assets/web-one/images/proposal/navContactMe_nu.GIF" width="183"/></td>
+                                    <td><img alt="NavBar Main Page" border="0" height="46" id="navbar_contactus" loading="lazy" name="navbar_mainPage" src="../assets/web-one/images/proposal/navMainPage_nu.GIF" width="146"/></td>
+                                    </tr></table>
+                                <table border="0" cellpadding="2" cellspacing="2" width="890">
+                                    <tr valign="Top">
+                                    <td align="Left">
+                                    <table border="0" cellpadding="4" cellspacing="4" width="50%">
+                                    <tr valign="Center">
+                                    <td align="center"><font face="Arial" size="4">
+                                    <img alt="" border="0" height="426" loading="lazy" src="../assets/web-one/images/sideBars/me4.bmp" width="208"/>
+                                    </font></td>
+                                    </tr>
+                                </table>
+                                    <td align="Center">
+                                    <table border="0" cellpadding="4" cellspacing="4" width="100%">
+                                    <tr valign="Center">
+                                    <td align="Left"><font face="Arial" size="2">
+                                    <center><img alt="" border="0" height="34" loading="lazy" src="../assets/web-one/images/mainNav/mainNavT.bmp" width="650"/></center><br/>
+                                    <center><table border="2" cellpading="4" cellspacing="2" width="75%">
+                                    <tr><td>r1c1</td><td>r1c2</td><td>r1c3</td></tr>
+                                    <tr><td>r2c1</td><td>r2c2</td><td>r2c2</td></tr>
+                                    <tr><td>r3c1</td><td>r3c2</td><td>r3c3</td></tr>
+                                    <tr><td>r4c1</td><td>r4c2</td><td>r4c3</td></tr>
+                                </table>
+                                    <p> <center><a class="linkBar" href="#/page/index.html">Home   </a>Assignments   Labs   \r
+                                </center></p>
+                                    <p><center><span style="background-color: #000000"><img alt="" border="0" height="34" loading="lazy" src="../assets/web-one/images/mainNav/mainNavB.bmp" width="650"/> </span></center>
+                                    </p></center></font></td>
+                                    </tr>
+                                </table>
+                                    <!--<TD ALIGN="Right">\r
+                                        <TABLE BORDER=0 CELLPADDING=4 CELLSPACING=4 WIDTH="50%">\r
+                                        <TR VALIGN="Center"> \r
+                                        <TD ALIGN="center"><FONT SIZE="4" FACE="Arial">\r
+                                        <img src="../images/sideBars/sideBarR.bmp"BORDER=0 WIDTH="148" HEIGHT="300" ALT=""></A>		\r
+                                    \r
+                                        </TD>\r
+                                        </TR>\r
+                                    </TABLE>-->
+                                    </td>
+                                    </td></tr>
+                                </table>
+                            </center></div></body>  `
+            },
+            "Labs/projectL1L2.html": {
+                title: "Software exercise",
+                html: /*html*/ `<body>
+
+                        <h2>Getting Started with Wonder Software</h2>
+                        <p>In this section you'll learn how to add a new user to the Wonder database.\r
+                            \r
+                            <h3>To add a new user:</h3>
+                            <ol>
+                                <li>Open the <b>Admin menu</b> and select <b>Users</b>
+                                    <li>Choose the <b>Add User...</b> button.\r
+                                    \r
+                                    <li>Enter the necessary user information.\r
+                                </li></li></li></ol>
+                            <p>\r
+                                Note: Make sure to enter a value in all of the user information fields. If you skip a field, the Wonder database will reject the record. \r
+                                \r
+                                \r
+                                \r
+                                \r
+                                <b> Non-Working Links :<b><br/><br/>\r
+                                The top navigation bar on submitted assignments L2 - L5 dose not work.<br/>\r
+                                I overlooked changing the href's for my Nav bar to reference server.<br/>\r
+                                Everything thing works on server  Shawn's Page
+                                </b></b></p></p></body>  `
+            },
+            "Labs/bluray2.html": {
+                title: "Page review",
+                html: /*html*/ `<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+                    <html>
+                        Http://www.sciencewatch.com/jan-feb2000/sw_page3.htm<br/>
+                        <br/>\r
+                            I chose this page specifically because\r
+                        it is an old article \r
+                        <br/>\r
+                            on Blue Ray development. As the older\r
+                        documents say\r
+                        <br/>	Blue Ray technology will be in large\r
+                        demand as soon as \r
+                        <br/>	they become available and meet\r
+                        standards.<br/><br/>\r
+                        \r
+                            Blue Ray technology is now highly\r
+                        advertised and pushed \r
+                        <br/>	on the market. Which is why I found it\r
+                        much easier in 2003\r
+                        <br/>	to find information pertaining to the\r
+                        development and \r
+                        <br/>\r
+                            vulnerabilities of blue laser\r
+                        technologies without skimming \r
+                        <br/>\r
+                            through all of the advertisements and\r
+                        sales pitches. \r
+                        <br/><br/>\r
+                            GOALS OF PAGE:\r
+                        <br/>\r
+                                    The goal of this page is to\r
+                        inform and entertain<br/>\r
+                            the reader as a summarized biography\r
+                        of one mans trials<br/>\r
+                            in the development of LED and LASER\r
+                        technologies.<br/>\r
+                            This page is more specific to\r
+                        informing reader of \r
+                        <br/>
+                        <font face="Times New Roman"><font size="3"><i><span style="font-weight: medium">Nichia\r
+                        's Shuji Nakamura's </span></i></font></font><font face="Times New Roman"><font size="3"><span style="font-style: normal"><span style="font-weight: medium">success\r
+                        in the creation of a </span></span></font></font>
+                        <br/>
+                        <font face="Times New Roman"><font size="3"><span style="font-style: normal"><span style="font-weight: medium">	blue\r
+                        laser diode.</span></span></font></font>
+
+                    </html> `
+            }
+        };
+        const nav = document.getElementById('nav'), main = document.getElementById('original');
+        function render() { let key = decodeURIComponent(location.hash.replace(/^#\/page\//, '')); if (!pages[key]) key = 'index.html'; nav.innerHTML = Object.entries(pages).map(([k, p]) => `<a href="#/page/${k}" class="${k === key ? 'current' : ''}">${p.title}</a>`).join(''); main.innerHTML = pages[key].html; document.title = pages[key].title + ' · Web Design'; }
+        window.addEventListener('hashchange', render); render();
+    </script>
+</body>
+
+</html>

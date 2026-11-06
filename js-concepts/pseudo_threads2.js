@@ -142,9 +142,9 @@
 						call_controls.currently_running.callFunctionName = cd[idx].func_name;
 						call_controls.currently_running.cycleCount = 0;
 						//we were going to ignore if set, instead we move into a bench 
-						//typically straight run, or priority run, but we experement a little
+						//typically straight run, or priority run, but we experiment a little
 						//some benches will be more musical/resequencing/random than others.
-						//meaning I do not think these next to properties are needed.
+						//meaning I do not think these next two properties are needed.
 						call_controls.currently_running.is_dormant = false;
 						call_controls.currently_running.is_paused = false;
 						if(typeof cd[idx].delay !== 'undefined'){
@@ -212,8 +212,11 @@
 			return new_ctx.external_api;
 		},
 		notify: function(){
+		/* Notify tells the cycle to recheck benches for runs that are ready to process */
 			notify();
 		},
+		/* This are master control full halt and excite from dormant bench*/
+		/* Not to confuse with excite on individual contexts which are technically priority weight boosts "clicks" */
         haltfornow: function(){__divertAllToDormant();},
         excite: function(){return __exciteFirstDormant();}
 	};
